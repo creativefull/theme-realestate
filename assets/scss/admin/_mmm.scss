@@ -1,0 +1,24 @@
+
+/* Mega Main Menu */
+
+#mm_general.postbox {
+  display: none;
+}
+
+.form-control {
+  option[value="tabs_dropdown"],
+  option[value="grid_dropdown"],
+  option[value="post_type_dropdown"],
+  option[value="mmm_menu_widgets_area_1"] {
+    display: none;
+  }
+}
+
+.icons_type {
+  display: none;
+}
+
+.menu-item-settings .description-wide,
+.mh-primary_menu_bg_image {
+  float: none;
+}

@@ -1,0 +1,52 @@
+.twitter-typeahead {
+  display: block !important;
+}
+
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+  color: #999
+}
+
+.tt-menu { /* used to be tt-dropdown-menu in older versions */
+  width: 100%;
+  margin-top: 2px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  h3 {
+    padding: 12px 0 6px 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 12px;
+    border-bottom: 1px solid #f4f4f4;
+  }
+}
+
+.tt-highlight {
+  color: $mh-color-primary;
+}
+
+.tt-suggestion {
+  padding: 6px 12px;
+  min-height: 36px;
+  cursor: pointer;
+}
+
+.tt-suggestion.tt-cursor, .tt-suggestion:hover {
+  background-color: #f4f4f4;
+
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+#myhome-listing-grid {
+  .tt-menu {
+    margin-top: -10px;
+  }
+}

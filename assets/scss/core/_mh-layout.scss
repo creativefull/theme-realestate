@@ -1,0 +1,67 @@
+/* Layout */
+.mh-layout {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  flex: 1 0 auto;
+  @include clearfix();
+  @include breakpoint(lg) {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+}
+
+.mh-layout__content-left {
+  margin: 0 auto;
+  @include breakpoint(md) {
+    width: 75%;
+    float: left;
+    padding-right: 36px;
+    &:after {
+      content: '\200b';
+      visibility: hidden;
+    }
+  }
+}
+
+.mh-layout__content-right {
+  margin: 0 auto;
+  @include breakpoint(md) {
+    width: 75%;
+    float: left;
+    padding-left: 36px;
+    &:after {
+      content: '\200b';
+      visibility: hidden;
+    }
+  }
+}
+
+.mh-layout__sidebar-left {
+  margin: 0 auto;
+  @include breakpoint(md) {
+    width: 25%;
+    float: left;
+    &:after {
+      content: '\200b';
+      visibility: hidden;
+    }
+  }
+}
+
+.mh-layout__sidebar-right {
+  margin: 0 auto;
+  position: relative;
+  @include breakpoint(md) {
+    width: 25%;
+    float: right;
+    &:after {
+      content: '\200b';
+      visibility: hidden;
+    }
+  }
+}
+
+.mh-layout__sidebar--sticky {
+  position: static;
+}

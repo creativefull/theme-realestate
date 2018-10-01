@@ -1,0 +1,110 @@
+/* Heading */
+.mh-heading-wrapper {
+  position: relative;
+  display: block;
+  @include clearfix();
+  h1, h2, h3, h4, h5, h6, .mh-subheading {
+    display: block;
+    text-align: center;
+  }
+}
+
+.mh-heading-wrapper--left {
+  h1, h2, h3, h4, h5, h6, .mh-subheading {
+    text-align: left;
+    &:after {
+      margin-left: 0;
+    }
+  }
+}
+
+.mh-heading-wrapper--right {
+  h1, h2, h3, h4, h5, h6, .mh-subheading {
+    text-align: right;
+    &:after {
+      left: auto;
+      margin-right: 0;
+    }
+  }
+}
+
+/* Heading */
+.mh-heading {
+  position: relative;
+}
+
+.mh-heading--top-separator {
+  font-wegiht: 400;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 12px;
+  margin-bottom: 24px;
+  &:after {
+    content: '';
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 90px;
+    width: 50%;
+    margin: 0 auto;
+    height: 2px;
+    background: $mh-color-primary;
+  }
+}
+
+.mh-heading--bottom-separator {
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 12px;
+  margin-bottom: 36px;
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 90px;
+    width: 50%;
+    margin: 0 auto;
+    height: 2px;
+    background: $mh-color-primary;
+  }
+}
+
+/* Subheading */
+.mh-subheading {
+  max-width: 900px;
+  margin: -24px auto 36px auto;
+}
+
+/* Heading background wrapper */
+.mh-heading-background-wrapper {
+  position: relative;
+  padding: 36px;
+  overflow: hidden;
+  font-size: 21px !important;
+  * {
+    z-index: 2;
+  }
+  h1, h2, h3, h4, h5 {
+    margin-bottom: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+  }
+  @include breakpoint(sm) {
+    padding: 48px;
+  }
+}

@@ -1,0 +1,131 @@
+.mh-single-attribute {
+  position: relative;
+  cursor: all-scroll;
+  @include clearfix();
+  & > div {
+    float: left;
+  }
+  background: #f9f9f9;
+  &:nth-child(even) {
+    background: #f4f4f4;
+  }
+}
+
+.mh-single-attribute--header {
+  background: #474b50;
+  color: #fff;
+  cursor: auto;
+}
+
+.mh-single-attribute__id {
+  padding: 6px 0;
+  width: 70px;
+  text-align: center;
+  line-height: 36px;
+}
+
+.mh-single-attribute__name {
+  padding: 6px 0;
+  width: 170px;
+  line-height: 36px;
+}
+
+.mh-single-attribute__type {
+  padding: 6px 0;
+  width: 110px;
+  line-height: 36px;
+}
+
+.mh-single-attribute__edit-button {
+  padding: 6px 0;
+  width: 70px;
+  text-align: center;
+  line-height: 36px;
+  max-height: 36px;
+  .mdl-button {
+    padding: 0 !important;
+    min-width: 40px !important;
+    color: #222 !important;
+  }
+}
+
+.mh-single-attribute__delete-button {
+  padding: 6px 0;
+  width: 70px;
+  text-align: center;
+  max-height: 36px;
+  line-height: 36px;
+  .mdl-button {
+    padding: 0 !important;
+    min-width: 40px !important;
+    color: #222 !important;
+  }
+}
+
+.mh-single-attribute__edit-open {
+  width: 100%;
+  @include clearfix();
+}
+
+.mh-single-attribute__edit-open__content {
+  background-color: #ffffff;
+  border: 1px solid #f4f4f4;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 12px 11px;
+  margin-bottom: 12px;
+  color: #222;
+  cursor: auto;
+  .mdl-button--end {
+    margin-top: 6px;
+    margin-bottom: 12px;
+  }
+}
+
+.mh-single-attribute__heading {
+  font-size: 16px;
+  line-height: 40px;
+  margin: 0 0 12px 0;
+  padding: 6px 12px;
+  background: rgba(0, 115, 170, 0.1);
+  border-bottom: 1px solid #0073aa;
+  span {
+    line-height: 40px;
+    height: 40px;
+    padding-right: 3px;
+  }
+  i {
+    position: relative;
+    line-height: 40px;
+    height: 40px;
+    padding-right: 3px;
+    top: 1px;
+    &:before {
+      font-size: 17px;
+    }
+  }
+}
+
+.mh-single-attribute__subheading {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 6px 0 6px 0;
+}
+
+.mh-single-attribute__currency {
+  background: #f4f4f4;
+  margin-bottom: 12px;
+}
+
+.mh-single-attribute__currency__content {
+  padding: 6px;
+}
+
+.mh-single-attribute__currency__name {
+  background: #474b50;
+  color: #fff;
+  font-weight: 700;
+  min-height: 18px;
+  padding: 6px;
+  margin-bottom: 6px;
+}

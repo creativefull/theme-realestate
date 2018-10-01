@@ -1,0 +1,41 @@
+/* WPML */
+img.wpml-ls-flag {
+  position: relative;
+}
+
+.wpml-ls-menu-item .mega_dropdown {
+  min-width: initial !important;
+  width: auto !important;
+}
+
+.mh-panel-wpml-languages {
+  background: #f9f9f9;
+  padding: 0;
+  margin-bottom: 12px;
+  font-size: 13px;
+  & > div {
+    padding: 12px 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    &.active {
+      color: $mh-color-primary;
+    }
+    &:not(.active):hover {
+      background: #f0f0f0;
+    }
+  }
+}
+
+.mh-menu-language-switcher-wrapper {
+  display: inline-block;
+  float: left;
+}
+
+.mh-wpml-top-bar__item {
+  display: inline-block;
+  padding: 0;
+  width: 28px;
+  margin-top: -2px;
+  float: left;
+}

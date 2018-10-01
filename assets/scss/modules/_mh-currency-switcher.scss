@@ -1,0 +1,71 @@
+.mh-currency-switcher__label {
+  float: left;
+  line-height: 36px;
+  margin-right: 6px;
+}
+
+.mh-menu-currency-wrapper {
+  float: left;
+  width: 100%;
+  @include breakpoint(1024px) {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+.mh-top-header,
+.mh-top-header-big {
+  .mh-currency-switcher {
+    float: left;
+    width: auto;
+    left: 0;
+    margin-bottom: 0;
+    display: none;
+    .dropdown-menu {
+      z-index: 9999999999;
+      border: 1px solid #f0f0f0;
+    }
+    .filter-option {
+      font-style: normal;
+    }
+    & > .btn {
+      min-width: 65px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      position: relative;
+      top: 3px;
+      padding-left: 12px;
+      font-style: normal;
+      background: #fafafa;
+      border: none;
+    }
+    .dropdown-menu > li {
+      line-height: 21px;
+    }
+    .dropdown-menu > li > a {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      min-height: 21px;
+      &:hover {
+        color: #222;
+      }
+    }
+    .dropdown-menu > li.selected > a:hover {
+      color: #fff;
+    }
+    option {
+      font-size: 14px;
+      color: #999;
+      border: 0;
+      background: transparent;
+      &.selected {
+        color: #222;
+        background: #f4f4f4;
+      }
+    }
+  }
+}
+
+.btn-group.bootstrap-select.mh-currency-switcher {
+  display: block;
+}

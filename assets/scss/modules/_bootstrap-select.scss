@@ -1,0 +1,135 @@
+/* Bootstrap select */
+.bootstrap-select.btn-group {
+  margin-bottom: 12px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  & > .btn {
+    position: relative;
+    float: left;
+    display: inline-block;
+    background: #fff;
+    padding: 13px 0 13px 20px;
+    border-radius: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin-bottom: 0;
+    border: 1px solid #c3c3c5;
+    .caret {
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      margin-top: -2px;
+      vertical-align: middle;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: 2px;
+      vertical-align: middle;
+      border-top: 4px dashed;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+    }
+  }
+  & > .dropdown-toggle {
+    width: 100%;
+    padding-right: 25px;
+    z-index: 1;
+  }
+  & > select {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 0.5px;
+    height: 100%;
+    padding: 0;
+    opacity: 0;
+    border: none;
+    &.mobile-device {
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+  &.bs-container {
+    position: absolute;
+    height: 0;
+    padding: 0;
+    .dropdown-menu {
+      z-index: map-get($zindex, dropdown-menu);
+    }
+  }
+  .filter-option {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    color: #222;
+    text-transform: capitalize;
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  float: left;
+  min-width: 160px;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  min-width: 100%;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #c3c3c5;
+  &.inner {
+    position: static;
+    float: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+  & > li {
+    position: relative;
+    > a {
+      display: block;
+      padding: 6px 12px;
+      min-height: 36px;
+      clear: both;
+      font-weight: normal;
+      color: #222;
+      white-space: nowrap;
+      text-transform: capitalize;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      @include breakpoint(1025px) {
+        &:hover,
+        &:focus {
+          color: #222;
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  }
+}
+
+.open .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu > li.selected a {
+  background: $mh-color-primary;
+  color: #fff;
+}

@@ -1,0 +1,24 @@
+.mh-grid-alternative {
+  @include clearfix();
+}
+
+.mh-grid-alternative h2 {
+  font-size: 24px;
+  margin: 12px 0 24px 0;
+  fontweight: 400;
+}
+
+.mh-grid-alternative__col-1 {
+  @include breakpoint(md) {
+    width: 490px;
+    float: left;
+  }
+}
+
+.mh-grid-alternative__col-2 {
+  @include breakpoint(md) {
+    padding-left: 24px;
+    width: 428px;
+    float: left;
+  }
+}

@@ -1,0 +1,22 @@
+/* Tagcloud */
+.tagcloud {
+  margin-bottom: (24px - 8px);
+  a {
+    display: inline-block;
+    position: relative;
+    font-size: 11px !important;
+    background: transparent;
+    border: 1px solid #999;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    margin: 0 8px 8px 0;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #fff !important;
+      background: $mh-color-primary;
+      border-color: $mh-color-primary;
+    }
+  }
+}

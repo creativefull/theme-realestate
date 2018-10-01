@@ -1,0 +1,10 @@
+/* Lazyload - images */
+.lazyload,
+.lazylaoding {
+  opacity: 0;
+}
+
+.lazyloaded {
+  @include transition(opacity 0.3s);
+  opacity: 1;
+}

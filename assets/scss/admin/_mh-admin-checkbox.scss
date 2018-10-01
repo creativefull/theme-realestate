@@ -1,0 +1,18 @@
+.mh-admin-checkbox-all .mh-admin-checkbox:last-of-type {
+  margin-bottom: 6px;
+}
+
+.mh-admin-checkbox {
+  @include clearfix();
+  div:first-child {
+    float: left;
+    padding-right: 3px;
+    top: -1px;
+    position: relative;
+  }
+
+  div:last-child {
+    float: left;
+    display: inline-block;
+  }
+}

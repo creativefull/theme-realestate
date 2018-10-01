@@ -1,0 +1,27 @@
+.updated.vc_license-activation-notice {
+  display: none;
+}
+
+.vc_ui-panel-content {
+  margin-top: 0px;
+}
+
+.wpb_element_title > i {
+  &:before {
+    display: block;
+    position: relative;
+    top: -33px;
+    left: 14px;
+    font-style: normal;
+    width: 200px;
+  }
+  &[title="Search Form - Property Listings"]:before {
+    content: 'Search Form - Property Listings';
+  }
+  &[title="Slider"]:before {
+    content: 'Slider';
+  }
+  &[title="Properties Slider"]:before {
+    content: 'Properties Slider';
+  }
+}

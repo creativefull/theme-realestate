@@ -1,0 +1,273 @@
+/**
+ * Swiper 4.0.3
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * http://www.idangero.us/swiper/
+ *
+ * Copyright 2014-2017 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+
+ *
+ * Released on: October 27, 2017
+ */
+.mh-property {
+  .swiper-container {
+    margin-bottom: 12px;
+    position: relative;
+    padding-bottom: 62.5%;
+    .swiper-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none !important;
+    }
+    .mh-caption {
+      z-index: 3;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 30px;
+      background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+      z-index: 2;
+    }
+    &:hover {
+      .swiper-slide:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 25%;
+        height: 100%;
+        background: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+        z-index: 2;
+      }
+      .swiper-slide:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 25%;
+        height: 100%;
+        background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+        z-index: 2;
+      }
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: block !important;
+      }
+    }
+  }
+  .swiper-button-next {
+    background-image: none !important;
+    position: absolute;
+    top: 50%;
+    line-height: 80px;
+    height: 80px;
+    margin-top: -40px;
+    right: 0;
+    padding-left: 48px;
+    padding-right: 12px;
+    &:before {
+      content: '\e825';
+      font-family: revicons;
+      position: absolute;
+      font-size: 40px;
+      height: 80px;
+      color: #fff;
+      right: 0;
+      margin-right: 36px;
+      display: block;
+      line-height: 80px;
+      z-index: 2;
+      text-align: center;
+      margin-right: 12px;
+    }
+  }
+  .swiper-button-prev {
+    background-image: none !important;
+    position: absolute;
+    top: 50%;
+    line-height: 80px;
+    height: 80px;
+    margin-top: -40px;
+    left: 0;
+    padding-left: 12px;
+    padding-right: 48px;
+    &:before {
+      content: '\e824';
+      font-family: revicons;
+      font-size: 40px;
+      height: 80px;
+      color: #fff;
+      display: block;
+      line-height: 80px;
+      z-index: 2;
+      margin-right: 36px;
+      text-align: center;
+    }
+  }
+  .swiper-lazy-preloader {
+    display: none;
+  }
+  .swiper-pagination-bullet {
+    background: #fff;
+  }
+  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next,
+  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next,
+  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev,
+  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
+    -webkit-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform: scale(.8);
+  }
+  .swiper-pagination-bullet {
+    opacity: 0.6;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+}
+
+.mh-property .swiper-slide {
+  text-align: center;
+  padding-bottom: 62.5%;
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.swiper-container--single {
+  .swiper-pagination {
+    color: #fff;
+    padding-bottom: 12px;
+    bottom: 0;
+  }
+  a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+    z-index: 2;
+  }
+  .swiper-slide:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 2;
+  }
+  .swiper-slide:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 2;
+  }
+  .swiper-button-next {
+    background-image: none !important;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    margin-top: 0;
+    padding-left: 48px;
+    padding-right: 24px;
+    &:before {
+      content: '\e825';
+      font-family: revicons;
+      position: absolute;
+      font-size: 40px;
+      height: 80px;
+      top: 50%;
+      margin-top: -40px;
+      color: #fff;
+      right: 0;
+      margin-right: 24px;
+      display: block;
+      line-height: 80px;
+      z-index: 2;
+      text-align: center;
+    }
+  }
+  .swiper-button-prev {
+    background-image: none !important;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    margin-top: 0;
+    padding-left: 24px;
+    padding-right: 48px;
+    &:before {
+      content: '\e824';
+      font-family: revicons;
+      position: absolute;
+      font-size: 40px;
+      height: 80px;
+      top: 50%;
+      margin-top: -40px;
+      color: #fff;
+      right: 0;
+      margin-right: 24px;
+      display: block;
+      line-height: 80px;
+      z-index: 2;
+      text-align: center;
+    }
+  }
+}
+
+.swiper-container--single-thumbs {
+  margin: 12px -6px 12px -6px !important;
+  box-sizing: border-box;
+  .swiper-container {
+    margin-bottom: 12px;
+    position: relative;
+    padding-bottom: 62.5%;
+    .swiper-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .swiper-slide {
+    width: 33%;
+    @include breakpoint(sm) {
+      width: 20%;
+    }
+    cursor: pointer;
+    padding: 0 6px;
+    .swiper-slide__inner {
+      overflow: hidden;
+      opacity: 0.4;
+      padding-bottom: 62.5%;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .swiper-slide-active .swiper-slide__inner {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,363 @@
+
+[class*="property-fields_page_acf-options-"] {
+
+  #poststuff {
+    width: 50%;
+  }
+
+  #post-body.columns-2 #postbox-container-1 {
+    float: none;
+    margin-right: 0;
+  }
+
+  #post-body.columns-2 #side-sortables {
+    min-height: 0;
+  }
+
+  #poststuff #post-body.columns-2 {
+    margin-right: 0;
+  }
+
+  #post-body.columns-2 #postbox-container-1,
+  #poststuff #post-body.columns-2 #side-sortables {
+    width: 100%;
+    float: left;
+  }
+  .postbox {
+    & > button,
+    & > h2 {
+      display: none !important;
+    }
+  }
+
+  #submitdiv, #major-publishing-actions {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  #major-publishing-actions {
+    text-align: left;
+    float: left;
+    padding-left: 0;
+    .spinner {
+      float: right !important;
+    }
+  }
+}
+
+#acf-myhome_estate {
+  @include breakpoint(lg) {
+    .acf-fields {
+      .acf-label label {
+        font-size: $font-size-s;
+        font-weight: 600;
+        margin: 0;
+        padding: 0 15px 4px 0;
+      }
+      .acf-field select {
+        padding-left: 12px;
+      }
+      & > .acf-field.acf-1of3 {
+        width: 50% !important;
+        float: left !important;
+        clear: none !important;
+        height: 110px!important;
+      }
+    }
+    .acf-tab-wrap.-top {
+      .acf-tab-group {
+        border: none;
+        padding: 0;
+        xpadding: 36px 18px 0 18px; // Tabs
+      }
+    }
+    .acf-tab-wrap.-top .acf-hl {
+      overflow: hidden;
+      & > li {
+        margin: 0;
+        width: 14.2%;
+        border-radius: 0;
+        a {
+          overflow: initial;
+          border-radius: 0;
+          border: 0;
+          display: block;
+          position: relative;
+          top: 0;
+        }
+        &.active {
+          a {
+
+            xbox-shadow: 0px 0px 6px rgba(34, 34, 34, 0.4); // Tabs
+            background: #fff !important;
+          }
+        }
+      }
+    }
+    .acf-tab-button {
+      padding: 90px 12px 36px 12px !important;
+      margin-bottom: 0 !important;
+      border-radius: 0;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 36px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 44px;
+        height: 44px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+    .acf-tab-button {
+      padding: 72px 12px 12px 12px !important;
+      margin-bottom: 0 !important;
+      font-size: 10px;
+      font-weight: 600;
+      text-align: center;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 24px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 36px;
+        height: 36px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+    .acf-tab-button[data-key="myhome_estate_tab_general"] {
+      &:before {
+        background-image: url('../images/admin/general.png');
+      }
+    }
+    .acf-tab-button[data-key="myhome_estate_tab_location"] {
+      &:before {
+        background-image: url('../images/admin/location.png');
+
+      }
+    }
+    .acf-tab-button[data-key="myhome_estate_sidebar"] {
+      &:before {
+        background-image: url('../images/admin/layers.png');
+
+      }
+    }
+    .acf-tab-button[data-key="myhome_estate_tab_gallery"] {
+      &:before {
+        background-image: url('../images/admin/gallery.png');
+      }
+    }
+    .acf-tab-button[data-key="myhome_estate_tab_video"] {
+      &:before {
+        background-image: url('../images/admin/video.png');
+      }
+    }
+    .acf-tab-button[data-key="myhome_estate_tab_plans"] {
+      &:before {
+        background-image: url('../images/admin/plans.png');
+      }
+    }
+    .acf-tab-button[data-key="myhome_estate_tab_virtual_tour"] {
+      &:before {
+        background-image: url('../images/admin/360-degrees.png');
+      }
+    }
+    .acf-tab-button[data-key="myhome_estate_sidebar"] {
+      &:before {
+        background-image: url('../images/admin/layers.png');
+      }
+    }
+    .acf-tab-button[data-key="myhome_estate_tab_attachments"] {
+      &:before {
+        background-image: url('../images/admin/folder.png');
+      }
+    }
+    .acf-fields > .acf-field {
+      padding-left: 18px;
+      padding-right: 18px;
+      &:first-child {
+        border-top: 0;
+      }
+    }
+    .acf-tab-group li a:hover {
+      background: #f7f7f7;
+    }
+  }
+}
+
+.acf-google-map {
+  border: none;
+}
+
+.acf-google-map .title {
+  margin-bottom: 12px;
+  border: 1px solid #dddddd;
+}
+
+.acf-image-uploader {
+  .view.hide-if-value p {
+    line-height: 36px;
+    a {
+      margin-left: 6px;
+    }
+  }
+}
+
+[class*="property-fields_page_acf-options-"] {
+  .acf-fields {
+    .acf-label label {
+      font-size: $font-size-s;
+      font-weight: 600;
+      margin: 0;
+      padding: 0 15px 4px 0;
+    }
+    & > .acf-field.acf-1of3 {
+      width: 50% !important;
+      float: left !important;
+      clear: none !important;
+    }
+  }
+  .acf-tab-wrap.-top {
+    border-bottom: 1px solid #e5e5e5;
+    .acf-tab-group {
+      border: none;
+      padding: 0;
+      xpadding: 36px 12px 0 12px; // Tabs
+    }
+  }
+  .acf-tab-wrap.-top .acf-hl {
+    overflow: hidden;
+    & > li {
+      margin: 0;
+      width: 50%;
+      border-radius: 0;
+      a {
+        overflow: initial;
+        border-radius: 0;
+        border: 0;
+        display: block;
+        position: relative;
+        top: 0;
+      }
+      &.active {
+        a {
+          xbox-shadow: 0px 0px 3px rgba(34, 34, 34, 0.4); // tab
+          background: #fff !important;
+        }
+      }
+    }
+  }
+  .acf-tab-button {
+    padding: 12px !important;
+    margin-bottom: 0 !important;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+  }
+  .acf-tab-button {
+    padding: 12px 12px 12px !important;
+    margin-bottom: 0 !important;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 24px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 36px;
+      height: 36px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  .acf-fields > .acf-field {
+    padding-left: 18px;
+    padding-right: 18px;
+    &:first-child {
+      border-top: 0;
+    }
+  }
+  select {
+    @include mh-admin-select;
+  }
+  .acf-tab-group li:not(.active) a:hover,
+  .acf-tab-group li:not(.active) a:active,
+  .acf-tab-group li:not(.active) a:focus,
+  .acf-tab-group li:not(.active):hover,
+  .acf-tab-group li:not(.active):active,
+  .acf-tab-group li:not(.active):focus {
+    background: #f1f1f1 !important;
+  }
+}
+
+.acf-gallery .acf-gallery-attachments {
+  padding-top: 50px !important;
+}
+
+.acf-gallery .acf-gallery-toolbar {
+  top: 0;
+  height: 28px;
+}
+
+.acf-fields > .acf-field {
+  height: auto !important;
+}
+
+.acf-settings-wrap__subtitle {
+  margin-top: 6px;
+  font-size: $font-size-s;
+  font-weight: 600;
+  color: #555555;
+}
+
+#addtag > .acf-field {
+  background: #fff;
+  padding: 10px;
+  margin-right: 5%;
+  margin-bottom: 0;
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
+}
+
+.post-type-estate {
+  .featured_image {
+    div {
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 62.5%;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}

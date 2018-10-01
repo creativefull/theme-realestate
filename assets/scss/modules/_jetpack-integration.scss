@@ -1,0 +1,20 @@
+.contact-form {
+  input,
+  textarea {
+    text-align: left;
+  }
+}
+
+.contact-submit {
+  input[type=submit] {
+    background: #fff;
+    border: 2px solid #4d4d4d;
+    padding: 10px 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+      background: #f2f2f2;
+    }
+  }
+}

@@ -1,0 +1,245 @@
+/* Base */
+html {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  word-wrap: break-word;
+  font-size: $base-font-size;
+  line-height: $line-height;
+  font-weight: 400;
+  color: #222;
+  font-family: $font-one;
+  background: #fff;
+  overflow-wrap: break-word;
+  text-align: left;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  outline: 0;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  @include breakpoint(1025px) {
+    &:hover, &:active, &:focus {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 18px;
+  @include breakpoint(sm) {
+    margin-bottom: 24px;
+  }
+}
+
+strong {
+  font-style: normal;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+iframe {
+  border: 0;
+  max-width: 100%;
+}
+
+hr {
+  border-top: 1px solid #999999;
+}
+
+button {
+  border-radius: 0;
+  cursor: pointer;
+  font-family: $font-one;
+}
+
+blockquote {
+  margin: 0;
+  footer {
+    font-style: italic;
+  }
+}
+
+cite {
+  font-style: italic;
+}
+
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 24px 0;
+  font-weight: 400;
+  padding: 0;
+  letter-spacing: 0;
+  line-height: $heading-line-height;
+  font-family: $font-two;
+}
+
+h1 {
+  font-size: $font-size-xxl;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: $font-size-xl;
+}
+
+h3 {
+  font-size: $font-size-l;
+}
+
+h4 {
+  font-size: $font-size-m;
+}
+
+h5 {
+  font-size: $font-size-s;
+}
+
+h6 {
+  font-size: $font-size-xs;
+}
+
+/* Forms */
+input, textarea {
+  @include placeholder {
+    color: #222;
+  }
+  text-decoration: none;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=date],
+input[type=number],
+input[type=tel],
+input[type=search]:not(#media-search-input) {
+  @include fields-style();
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #222 !important;
+  opacity: 1 !important;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: rgba(0, 0, 0, 0);
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #222;
+  @include transition(0.1s);
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #222;
+  @include transition(0.1s);
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #222;
+  @include transition(0.1s);
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #222;
+  @include transition(0.1s);
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0);
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  opacity: 0 !important;
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0);
+}
+
+input:disabled {
+  color: rgba(34, 34, 34, 0.7) !important;
+  background: rgba(34, 34, 34, 0.2) !important;
+}
+
+textarea {
+  @include fields-style();
+  resize: none;
+}
+
+select {
+  max-width: 100%;
+  width: 100%;
+  padding: 14px 20px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-one;
+}
+
+figure {
+  margin: 0;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+td,
+th {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #999;
+  font-weight: initial;
+}

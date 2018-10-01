@@ -1,0 +1,42 @@
+/* Thumbnails */
+.mh-thumbnail {
+  position: relative;
+  display: block;
+  margin-bottom: 12px;
+  img {
+    width: 100%;
+  }
+  @include breakpoint(1025px) {
+    &:hover .mh-thumbnail__inner:after {
+      background: #000;
+      opacity: 0.3;
+    }
+  }
+}
+
+.mh-thumbnail__featured {
+  z-index: 10 !important;
+}
+
+.mh-thumbnail__inner:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+  background: #000;
+  @include transition(opacity .3s cubic-bezier(0.4, 0, 0.2, 1));
+}
+
+.mh-thumbnail__featured {
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  padding: 3px 6px;
+  color: #fff;
+  background: $mh-color-primary;
+  font-size: 14px;
+}

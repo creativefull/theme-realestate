@@ -1,0 +1,93 @@
+/* Post Grid */
+.mh-post-grid {
+  margin-bottom: 12px;
+  padding: 12px 0 24px 0;
+  background: #f2f2f2;
+  margin-bottom: 24px;
+  @include clearfix();
+  &.has-post-thumbnail {
+    padding: 0 0 12px 0;
+  }
+  .mh-thumbnail__inner:not(.mh-thumbnail__inner--horizontal):not(.mh-thumbnail__inner--square):not(.mh-thumbnail__inner--vertical) {
+    padding-bottom: 62.5%;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    img {
+      width: auto;
+      position: absolute;
+      min-width: 100%;
+      height: initial;
+      max-height: none;
+      min-height: 100%;
+    }
+  }
+}
+
+.mh-post-grid--white {
+  background: #fff;
+}
+
+.mh-post-grid--dark {
+  background: #333;
+  color: #fff;
+  .mh-post-grid__heading a {
+    color: #fff;
+  }
+}
+
+.mh-post-grid__thumbnail {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+  @include mh-img-hover();
+  .mh-thumbnail__inner img {
+    max-height: 100%;
+    width: 100%;
+  }
+}
+
+.mh-post-grid__inner {
+  position: relative;
+  padding: 0 18px;
+}
+
+.mh-post-grid__heading {
+  padding-top: 12px;
+  margin-bottom: 12px;
+  @include clearfix();
+  a {
+    font-weight: 700;
+  }
+}
+
+.mh-post-grid__excerpt {
+  margin-bottom: 12px;
+}
+
+.mh-post-grid__btn-wrapper {
+  min-height: 48px;
+  a {
+    position: absolute;
+    bottom: 0;
+    right: 18px;
+  }
+}
+
+.mh-post-grid__thumbnail {
+  .mh-thumbnail__inner--vertical,
+  .mh-thumbnail__inner--horizontal,
+  .mh-thumbnail__inner--square {
+    padding-bottom: 0;
+  }
+}
+
+.mh-post-grid__thumbnail .mh-thumbnail__inner.mh-thumbnail__inner--vertical img {
+  min-height: initial;
+  min-width: initial;
+  max-height: initial;
+  max-width: initial;
+  width: initial;
+  height: initial;
+  position: static;
+}

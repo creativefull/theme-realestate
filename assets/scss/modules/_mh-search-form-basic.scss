@@ -1,0 +1,120 @@
+.mh-search-form-basic {
+  padding: 6px;
+  position: relative;
+  @include clearfix();
+  input[type=text] {
+    position: relative;
+    background: #fff;
+  }
+  .mh-search__label {
+    display: none;
+  }
+  input[type=text] {
+    text-align: left;
+  }
+  .bootstrap-select.btn-group .filter-option {
+    text-align: left;
+  }
+  .mdl-button {
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    padding: 0;
+  }
+  .btn-group.bootstrap-select {
+    background: #fff;
+  }
+}
+
+.mh-search-form-basic__inner {
+  position: relative;
+  top: 100px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include clearfix();
+  .mh-search__element {
+    width: 100%;
+  }
+  .mh-search__element:not(:last-child) {
+    margin-bottom: 6px;
+    @include breakpoint(778px) {
+      margin-bottom: 0;
+    }
+  }
+  .mh-search__element {
+    @include breakpoint(778px) {
+      width: 25%;
+    }
+  }
+}
+
+.mh-search-form-basic__buttons {
+  float: left;
+  width: 100%;
+  margin-bottom: 12px;
+  margin-left: -12px;
+  margin-right: -12px;
+  @include clearfix();
+}
+
+.mh-search-form-basic__buttons__single {
+  display: inline-block;
+  margin-right: 12px;
+  button {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    background: #fff;
+    color: #222;
+    padding: 12px 18px;
+    border-radius: 5px;
+    &.is-active {
+      background: $mh-color-primary;
+      color: #fff;
+    }
+  }
+}
+
+.mh-search-form-basic__form {
+  background: #fff;
+  border-radius: 5px;
+  float: left;
+  width: 100%;
+  position: relative;
+  input[type=text] {
+    position: relative;
+    background: #fff;
+    text-align: left;
+  }
+  .bootstrap-select.btn-group .filter-option {
+    text-align: left;
+  }
+  .btn-group.bootstrap-select {
+    background: #fff;
+  }
+  @include breakpoint(sm) {
+    padding: 9px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-left: -6px;
+    margin-right: -6px;
+    &:after {
+      content: "";
+      flex: auto;
+    }
+    .mh-search__element {
+      padding: 0 6px;
+      width: 25%;
+    }
+    @include breakpoint(md) {
+      margin-left: -12px;
+      margin-right: -12px;
+      .mh-search__element {
+        padding: 0 12px;
+      }
+    }
+  }
+}

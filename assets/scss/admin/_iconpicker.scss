@@ -1,0 +1,20 @@
+html body {
+  .iconpicker-element {
+    cursor: pointer;
+  }
+
+  .iconpicker-popover {
+    left: 130px !important;
+    width: 280px !important;
+  }
+
+  .iconpicker-popover.popover.bottom > .arrow, .iconpicker-popover.popover.bottomRight > .arrow, .iconpicker-popover.popover.bottomLeft > .arrow {
+    border-bottom-color: rgb(0, 115, 170);
+    top: -10px;
+  }
+
+  .iconpicker-popover.popover .popover-title {
+    background-color: #0073aa;
+    color: #fff;
+  }
+}

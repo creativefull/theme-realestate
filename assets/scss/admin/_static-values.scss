@@ -1,0 +1,55 @@
+.static-values-wrapper {
+  .static-values {
+    padding: 9px;
+    input[type="text"] {
+      font-size: 13px !important;
+      padding: 3px !important;
+    }
+  }
+}
+
+.static-values {
+  position: relative;
+  @include clearfix();
+  background: #f4f4f4;
+  &:nth-child(even) {
+    background: #f9f9f9;
+  }
+  &:first-child {
+    background: #e5f1f6;
+    color: #222;
+    font-weight: 700;
+  }
+}
+
+.static-values__col-1 {
+  display: inline-block;
+  width: 43%;
+  float: left;
+  input {
+    margin-right: 6px;
+  }
+}
+
+.static-values__col-2 {
+  display: inline-block;
+  float: left;
+  width: 44%;
+  input {
+    margin-left: 6px;
+  }
+}
+
+.static-values__col-3 {
+  position: absolute;
+  right: -14px;
+  margin-top: -5px;
+  width: 64px;
+  button {
+    padding: 0 !important;
+    min-width: 40px !important;
+    i {
+      margin-top: -9px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.mh-top-wide {
+  .mh-layout {
+    max-width: none;
+  }
+  #mega_main_menu.mh-primary .menu_inner {
+    @include breakpoint(lg) {
+      max-width: none;
+      padding: 0 30px;
+    }
+  }
+}

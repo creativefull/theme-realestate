@@ -1,0 +1,28 @@
+#myhome-app {
+  .swal2-modal .swal2-title {
+    font-size: 21px;
+    font-family: inherit;
+  }
+
+  .swal2-buttonswrapper > button {
+    border-radius: 0
+  }
+  .swal2-modal {
+    border-radius: 0;
+  }
+  .swal2-loading button {
+    border-radius: 100%;
+  }
+  .swal2-cancel {
+    border-radius: 0 !important;
+  }
+}
+
+.swal2-container {
+  z-index: 99999999;
+}
+
+/* Sweet Alert Body Fix */
+body {
+  padding-right: 0px !important;
+}

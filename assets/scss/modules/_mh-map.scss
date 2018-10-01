@@ -1,0 +1,379 @@
+/* Map */
+.mh-map-wrapper {
+  position: relative;
+}
+
+.gm-style-pbc {
+  z-index: 5 !important;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.mh-map-no-key {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 150px 15px;
+  background: #f2f2f2;
+}
+
+#myhome-listing-map {
+  position: relative;
+  overflow: hidden;
+}
+
+.mh-map-height-tall,
+.mh-map-placeholder--tall {
+  #myhome-map,
+  .mh-map-wrapper__noresults,
+  .mh-loader-wrapper-map {
+    height: 450px;
+    @include breakpoint(lg) {
+      height: 650px;
+    }
+  }
+}
+
+.mh-map-height-standard,
+.mh-map-placeholder--standard {
+  #myhome-map,
+  .mh-map-wrapper__noresults,
+  .mh-loader-wrapper-map {
+    height: 450px;
+    @include breakpoint(lg) {
+      height: 500px;
+    }
+  }
+}
+
+.mh-map-wrapper__noresults {
+  background: rgba(0, 0, 0, 0.9) !important;
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: $font-size-xxxl;
+  color: $mh-color-primary;
+}
+
+.mh-map-wrapper__noresults__inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mh-map-single-estate {
+  height: 500px;
+}
+
+.mh-map-single-estate-small {
+  height: 500px;
+  margin-bottom: 24px;
+}
+
+/* Map controls */
+.mh-map-controls {
+  margin: 12px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 0;
+  z-index: 3;
+  @include breakpoint(md) {
+    margin: 24px auto 0 auto;
+  }
+}
+
+.mh-map-controls__inner {
+  position: relative;
+  box-sizing: content-box;
+}
+
+/* Map panel */
+.mh-map-panel {
+  width: auto;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+  border: 2px solid $mh-color-primary;
+}
+
+.mh-map-panel__element {
+  display: inline-block;
+  float: left;
+  button {
+    background: transparent;
+    width: 100%;
+    color: #222;
+    font-weight: 700;
+    position: relative;
+    font-size: 12px;
+    height: 42px;
+    border: 0;
+    text-transform: uppercase;
+    line-height: 24px;
+    text-align: left;
+    padding: 6px 12px;
+    & > span {
+      display: none;
+    }
+    .fa {
+      font-weight: initial;
+      padding: 0 6px;
+      @include breakpoint(sm) {
+        padding: 0;
+        &.fa-expand {
+          margin-right: 9px;
+        }
+      }
+    }
+    @include breakpoint(sm) {
+      & > span {
+        display: inline-block;
+      }
+      .fa {
+        &.fa-street-view {
+          margin-right: 9px;
+        }
+        &.fa-angle-right {
+          margin-left: 9px;
+        }
+        &.fa-angle-left {
+          margin-right: 9px;
+        }
+      }
+    }
+    &:after {
+      content: '';
+      height: 40px;
+      width: 1px;
+      background: #f0f0f0;
+      position: absolute;
+      top: 5px;
+      right: 0;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    &:hover {
+      color: #fff;
+      background: $mh-color-primary;
+    }
+    @media (max-width: 1024px) {
+      &:not(.mh-button--active):hover {
+        background: transparent !important;
+        color: #222 !important;
+      }
+    }
+  }
+}
+
+.mh-map-panel .mh-map-panel__element button.mh-button--active {
+  background: $mh-color-primary;
+  color: #fff;
+  &:hover,
+  &:active,
+  &:focus {
+    background: $mh-color-primary;
+    color: #fff;
+  }
+}
+
+@media (max-width: 1025px) {
+  .mh-map-panel__element {
+    display: inline-block;
+    float: left;
+  }
+}
+
+.mh-map-panel__element--reset {
+  display: none;
+  @include breakpoint(sm) {
+    display: initial;
+  }
+}
+
+/* Map zoom */
+.mh-map-zoom {
+  color: #fff;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 40px;
+  position: absolute;
+  z-index: 2;
+  border: 2px solid $mh-color-primary;
+  @include clearfix();
+}
+
+.mh-map-zoom__element {
+  $size: 36px;
+
+  display: inline-block;
+  float: left;
+  background: #fff;
+  color: #222;
+  button {
+    line-height: $size;
+    height: $size;
+    width: $size;
+    padding: 0;
+    font-size: 12px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    i {
+      font-size: 9px;
+      line-height: $size;
+    }
+    &:hover {
+      color: #fff;
+      background: $mh-color-primary;
+    }
+    @media (max-width: 1024px) {
+      &:hover {
+        background: transparent !important;
+        color: #222 !important;
+      }
+    }
+  }
+}
+
+/* Map Infobox */
+.infoBox > img {
+  float: right;
+  width: 30px;
+  top: 18px;
+  right: 9px;
+  z-index: 1;
+}
+
+.mh-map-infobox {
+  background: $mh-color-primary;
+  padding: 12px 0 0 0;
+  position: relative;
+  font-family: $font-one;
+  margin-top: -24px;
+  width: 100%;
+  float: left;
+  @include clearfix;
+
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent !important; // !important - prevent overwrite by Theme Option primary color
+    border-right: 14px solid transparent !important; // !important - prevent overwrite by Theme Option primary color
+    border-top: 14px solid $mh-color-primary;
+  }
+  .mh-map-infobox__img-wrapper {
+    max-width: 100%;
+    height: 160px;
+    overflow: hidden;
+    margin-top: -12px;
+    position: relative;
+    border: 2px solid $mh-color-primary;
+    @include mh-transition();
+    img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -20px;
+      margin: 0 auto;
+      display: block;
+      max-width: 100%;
+    }
+  }
+  .mh-map-infobox__name {
+    font-size: $font-size-m;
+    margin: 9px 12px 12px;
+    color: #fff;
+    letter-spacing: 0;
+    text-align: center;
+    @include text-truncate();
+    @include breakpoint(1025px) {
+      &:hover {
+        img {
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+  .mh-map-infobox__price {
+    position: relative;
+    font-size: $font-size-l;
+    font-weight: 700;
+    color: #fff;
+    margin: -6px 12px 12px 0;
+    text-align: center;
+    @include clearfix();
+  }
+  .mh-map-infobox__buttons {
+    text-align: center;
+    height: 48px;
+    padding: 0 12px;
+  }
+}
+
+.mh-map-pin {
+  i {
+    position: relative;
+    font-size: 38px;
+    line-height: 38px;
+    width: 70px;
+    color: $mh-color-primary;
+    font-weight: 700;
+  }
+  width: 70px;
+  height: 38px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mh-map-pin.mh-map-pin--dark i {
+  color: #666666;
+}
+
+.mh-map-wrapper--fullscreen {
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: map-get($zindex, fullscreen);
+  #myhome-map {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+}
+
+.mh-map-wrapper--fullscreen {
+  height: 100vh;
+}
+
+.mh-map-wrapper--fullscreen #map {
+  height: 100vh;
+}
+
+.mh-map-wrapper--fullscreen + .mh-map-controls {
+  position: fixed !important;
+  z-index: map-get($zindex, fullscreen-controls);
+}

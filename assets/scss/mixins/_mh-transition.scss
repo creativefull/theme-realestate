@@ -1,0 +1,3 @@
+@mixin mh-transition($speed: 0.2s) {
+  @include transition($speed ease-in-out);
+}

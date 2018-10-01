@@ -1,0 +1,19 @@
+.mh-agent-list {
+  @include breakpoint(sm) {
+    margin: 0 -6px;
+  }
+}
+
+.mh-agent-list__element {
+  @include breakpoint(sm) {
+    width: 50%;
+    float: left;
+    .mh-agent {
+      margin: 0 6px 24px 6px;
+    }
+  }
+  @include breakpoint(md) {
+    width: 33.3%;
+    float: left;
+  }
+}

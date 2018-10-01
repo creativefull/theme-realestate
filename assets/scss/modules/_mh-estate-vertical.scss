@@ -1,0 +1,218 @@
+/* Estate vertical */
+.mh-estate-vertical {
+  position: relative;
+  background: #f2f2f2;
+  padding-bottom: 12px;
+  @include clearfix();
+  .mh-thumbnail {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding-bottom: 0;
+    .mh-thumbnail__inner {
+      padding-bottom: 62.5%;
+      @include clearfix();
+    }
+    .mh-thumbnail__inner:before {
+      content: '';
+      background: #000;
+      opacity: 0;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      @include mh-transition();
+    }
+    .mh-thumbnail__inner:after {
+      @include mh-transition();
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    @include breakpoint(1025px) {
+      &:hover {
+        .mh-thumbnail__inner:before {
+          opacity: 0.5;
+        }
+        .mh-estate-vertical__text {
+          top: 50%;
+          margin-top: -34px;
+          opacity: 1;
+          z-index: 2;
+          @include transition(opacity .3s ease-out, bottom .2s ease-out);
+        }
+        .mh-estate-vertical__text__inner {
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.mh-estate-vertical--list {
+  margin-bottom: 12px;
+}
+
+.mh-estate-vertical--white {
+  background: #fff;
+}
+
+.mh-estate-vertical--dark {
+  background: #333;
+  color: #fff;
+  .mh-estate-vertical__heading a {
+    color: #fff;
+  }
+  .myhome-compare .mdl-button {
+    color: #fff;
+  }
+  .myhome-compare-button button {
+    color: #fff;
+  }
+}
+
+.mh-estate-vertical__content {
+  padding: 0 12px;
+  @include clearfix();
+}
+
+.mh-estate-vertical__heading {
+  margin-bottom: 6px;
+  font-size: $font-size-l;
+  font-weight: 700;
+}
+
+.mh-estate-vertical__subheading {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-family: $font-one;
+}
+
+.mh-estate-vertical__date {
+  display: block;
+  @include clearfix();
+  line-height: 36px;
+  font-size: 11px;
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+}
+
+.mh-estate-vertical__buttons-wrapper {
+  height: 48px;
+}
+
+.mh-estate-vertical__buttons {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  text-align: right;
+}
+
+.mh-estate-vertical__buttons__single {
+  display: inline-block;
+  width: auto;
+  white-space: nowrap;
+  font-size: $font-size-xs;
+  .mdl-button {
+    min-width: 95px !important;
+    @include breakpoint(sm) {
+      min-width: 125px !important;
+    }
+  }
+  .mdl-button__icon-left,
+  .mdl-button__icon-right {
+    display: none;
+    @include breakpoint(sm) {
+      display: inline;
+    }
+  }
+  a, button {
+    width: 100%;
+  }
+  &:nth-last-child(2) {
+    padding-right: 6px;
+    float: none;
+  }
+}
+
+.mh-estate-vertical__bottom {
+  float: right;
+  min-height: 36px;
+}
+
+.mh-estate-vertical__bottom__inner {
+  width: 100%;
+  bottom: 0;
+  line-height: 36px;
+  left: 0;
+  @include clearfix();
+}
+
+.mh-estate-vertical__text {
+  display: table;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 76px;
+  padding: 0 24px;
+  opacity: 0;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s ease-out;
+  .mh-estate-vertical__inner {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.mh-estate-vertical__primary {
+  font-family: $font-one;
+  font-size: $font-size-s;
+  color: $mh-color-primary;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.mh-estate-vertical__more-info {
+  display: inline-block;
+  margin-right: 12px;
+  line-height: 24px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  position: relative !important;
+  [class*="flaticon-"] {
+    padding-left: 30px;
+    &:before {
+      position: absolute;
+      left: 0;
+      font-weight: 400 !important;
+      font-size: 20px !important;
+      margin-right: 6px !important;
+      position: absolute;
+      top: 2px !important;
+    }
+  }
+  .fa {
+    padding-left: 24px;
+    &:before {
+      position: absolute;
+      left: 0;
+      font-weight: 400 !important;
+      font-size: 20px !important;
+      top: 1px !important;
+    }
+  }
+}
+
+/* Estate Vertical - OWL Carousel */
+.owl-item .mh-estate-vertical {
+  margin-bottom: 24px;
+}

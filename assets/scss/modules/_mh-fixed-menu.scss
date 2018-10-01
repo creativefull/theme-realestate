@@ -1,0 +1,85 @@
+/* Fixed Menu */
+.mh-fixed-menu .mh-header {
+  position: relative;
+}
+
+.mobile_menu_active #mega_main_menu_ul {
+  @media (max-width: $mobile-navbar-max-width) {
+    overflow-y: scroll;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.mobile_menu_active + .mega_main_menu_ul {
+  width: 100% !important;
+}
+
+.mobile_menu_active + .mega_main_menu_ul {
+  background: #fff !important;
+}
+
+.mh-fixed-menu--active .mobile_menu_active + .mega_main_menu_ul {
+  background: #fff !important;
+  height: 100vh !important;
+  overflow-y: scroll !important;
+}
+
+.mh-fixed-menu .mh-header > div {
+  position: absolute !important;
+  width: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.mh-fixed-menu--active .mh-header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100000;
+}
+
+.admin-bar .mh-fixed-menu--active .mh-header {
+  @include breakpoint(782px) {
+    top: 32px;
+  }
+}
+
+.mh-fixed-menu--active .mega_main_menu {
+  background: #222;
+}
+
+html body .mh-fixed-menu.mh-fixed-menu--transparent-light.mh-fixed-menu--active {
+
+  .mega_main_menu {
+    background: #fff !important;
+  }
+
+  .mega_main_menu .mmm_fullwidth_container {
+    background-image: none !important;
+  }
+
+  #mega_main_menu.mh-primary > .menu_holder > .menu_inner > ul > li > .item_link:after,
+  #mega_main_menu.mh-primary > .menu_holder:not(.sticky_container) > .menu_inner > ul > li > .item_link *, .symbol_menu i {
+    color: #4d4d4d !important;
+  }
+}
+
+html body .mh-fixed-menu--transparent-light.mh-fixed-menu--active .mh-header--transparent #mega_main_menu.mh-primary > .menu_holder:not(.sticky_container) > .mmm_fullwidth_container {
+  border-bottom: 1px solid #efefef;
+}
+
+.single-estate .mh-fixed-menu.mh-fixed-menu--transparent-light + .mh-sticky-menu-placeholder {
+  height: 0 !important;
+}
+
+.single-estate .mh-fixed-menu.mh-fixed-menu--transparent-dark + .mh-sticky-menu-placeholder {
+  height: 0 !important;
+}
+
+.single-estate .mh-fixed-menu.mh-fixed-menu--transparent-advanced + .mh-sticky-menu-placeholder {
+  height: 0 !important;
+}

@@ -1,0 +1,60 @@
+/* Video wrapper */
+.mh-video-wrapper {
+  padding-bottom: 24px;
+  text-align: center;
+  position: relative;
+  @include clearfix();
+}
+
+@include breakpoint(sm) {
+  .mh-video-wrapper {
+    padding-bottom: 56.25%;
+    margin-bottom: 24px;
+    object,
+    embed,
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .single-estate {
+    .mh-video-wrapper {
+      padding-top: 0;
+      .mejs-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-bottom: 56.25%;
+        height: initial !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .mejs-container-fullscreen {
+        max-height: 100%;
+      }
+      .wp-video {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.vc_video-small {
+  max-width: 640px !important;
+  margin: 0 auto !important;
+}
+
+.wp-video-shortcode {
+  height: auto !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.wp-video-shortcode * {
+  box-shadow: none !important;
+  outline: none !important;
+}

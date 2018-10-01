@@ -1,0 +1,84 @@
+/* Top Header */
+.mh-top-header {
+  font-family: $font-two;
+  font-size: 14px;
+  line-height: 36px;
+  color: #666666;
+  border-bottom: 1px solid #f0f0f0;
+  @include breakpoint(md) {
+    height: 36px;
+    text-align: right;
+  }
+  &:not(.mh-top-header--primary) a {
+    color: #666666;
+    &:hover {
+      color: $mh-color-primary;
+    }
+  }
+  address {
+    font-style: normal;
+  }
+}
+
+.mh-top-header__element {
+  width:100%;
+  float:left;
+  display: block;
+  position: relative;
+  & > a > i {
+    margin-right: 6px;
+    position: relative;
+    top: 1px;
+  }
+  @include breakpoint(sm) {
+    width: 50%;
+  }
+  @include breakpoint(md) {
+    width: auto;
+    float: none;
+    display: inline-block;
+    margin-right: 24px;
+    line-height: 36px;
+    &:after {
+      content: '';
+      height: 20px;
+      width: 1px;
+      background: #f0f0f0;
+      position: absolute;
+      top: 8px;
+      right: -12px;
+    }
+    &:last-of-type {
+      margin-right: 0;
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.mh-top-header__element--social-icons {
+  display: none;
+  @include breakpoint(md) {
+    display: inline-block;
+    & > span > a {
+      margin-left: 9px;
+    }
+    & > span:first-of-type > a {
+      margin-left: 0;
+    }
+  }
+}
+
+.mh-top-header--primary {
+  background: $mh-color-primary;
+  border-color: $mh-color-primary;
+  color: #fff;
+  & .mh-top-header__element > a,
+  & .mh-top-header__element > span > a {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+}

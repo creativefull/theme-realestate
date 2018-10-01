@@ -1,0 +1,23 @@
+@mixin mh-img-hover() {
+  position: relative;
+  display: block;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+    background: #000;
+    @include transition(opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1));
+  }
+  @include breakpoint(1025px) {
+    &:hover {
+      &:after {
+        opacity: 0.3;
+      }
+    }
+  }
+}

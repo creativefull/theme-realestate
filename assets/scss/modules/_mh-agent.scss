@@ -1,0 +1,99 @@
+/* Agent */
+.mh-agent {
+  background: #f2f2f2;
+  margin-bottom: 24px;
+  @include clearfix;
+}
+
+.mh-agent__thumbnail {
+  position: relative;
+  padding-bottom: 100%;
+  margin-bottom: 12px;
+  @include mh-img-hover;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.mh-agent__content {
+  position: relative;
+  padding: 0 12px;
+  @include clearfix();
+}
+
+.mh-agent__heading {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.mh-agent__text {
+  margin-bottom: 18px;
+}
+
+.mh-agent__social-wrapper {
+  height: 48px;
+  float: left;
+}
+
+.mh-agent__social {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  line-height: 36px;
+  a {
+    margin-right: 12px;
+    color: #666666;
+    @include breakpoint(1025px) {
+      &:hover {
+        color: #222;
+      }
+    }
+  }
+}
+
+.mh-agent__button-wrapper {
+  height: 48px;
+  float: left;
+}
+
+.mh-agent__button {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  text-align: right;
+}
+
+.mh-agent--dark {
+  background: #333;
+  color: #fff;
+  a {
+    color: #fff;
+    @include breakpoint(1025px) {
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.mh-agent--white {
+  background: #fff;
+}
+
+.mh-agent__additional-fields {
+  @include clearfix();
+}
+
+.mh-agent__additional-fields__item {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.mh-agent__content .mh-agent__additional-fields__item {
+  line-height: initial;
+  margin-bottom: 12px;
+}

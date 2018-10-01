@@ -1,0 +1,24 @@
+/* Widget Twitter */
+.mh-widget-twitter {
+  color: rgb(96, 125, 138);
+  .tweet {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include breakpoint(1025px) {
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    &:before {
+      content: url("assets/images/twitter.png");
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+    }
+  }
+}

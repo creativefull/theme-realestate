@@ -1,0 +1,13 @@
+/* Widget Facebook */
+.mh-widget-facebook {
+  text-align: center;
+  iframe {
+    border: none !important;
+    overflow: hidden !important;
+  }
+  @include breakpoint(sm) {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}

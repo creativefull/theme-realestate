@@ -1,0 +1,58 @@
+.mh-gallery-submit {
+  @include clearfix();
+  .vue-simple-spinner-text {
+    display: none;
+  }
+}
+
+.mh-gallery-submit > div {
+  background: #f4f4f4;
+  &:nth-child(even) {
+    background: #f9f9f9;
+  }
+}
+
+.mh-gallery-submit__row {
+  background: #f4f4f4;
+  @include clearfix();
+  &:last-child {
+    margin-bottom: 12px;
+  }
+}
+
+.mh-gallery-submit__col-1 {
+  position: relative;
+  @include breakpoint(sm) {
+    position: absolute;
+    padding: 6px;
+  }
+}
+
+.mh-gallery-submit__col-2 {
+  @include breakpoint(sm) {
+    float: left;
+    width: 100%;
+    padding-left: 140px;
+    line-height: 132px;
+    @include text-truncate();
+  }
+}
+
+.mh-gallery-submit__spinner {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50px;
+}
+
+.mh-gallery-submit-loaded {
+  margin: 0 0 24px 0;
+  padding: 12px 12px 0 12px;
+  background: #f4f4f4;
+}
+
+.mh-gallery-submit-loaded__label {
+  margin-bottom: 12px;
+  font-weight: 700;
+}

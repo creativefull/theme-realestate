@@ -1,0 +1,105 @@
+/* Widget Calendar */
+.calendar_wrap table {
+  table-layout: fixed;
+  word-wrap: normal;
+  width: 100%;
+  border: 0;
+  td,
+  th {
+    border: 0;
+    padding: 6px;
+  }
+  caption {
+    font-size: $font-size-xs;
+    text-align: right;
+    font-weight: 400;
+    height: 24px;
+    color: #222;
+    margin-bottom: 6px;
+  }
+  thead {
+    border-top: 1px solid #c3c3c5;
+    border-bottom: 1px solid #c3c3c5;
+    th {
+      text-align: center;
+      font-size: $font-size-xs;
+      font-weight: 400;
+    }
+  }
+  tbody {
+    cursor: default;
+    td {
+      text-align: center;
+      position: relative;
+    }
+    a {
+      display: block;
+      color: #fff;
+      background: #4d4d4d;
+      line-height: 31px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-weight: 400;
+      @include mh-transition(0s);
+      &:hover {
+        background: $mh-color-primary;
+        color: #fff;
+      }
+    }
+  }
+}
+
+tbody tr {
+  text-align: center;
+  font-size: $font-size-xs;
+}
+
+tfoot {
+  border-top: 1px solid #c3c3c5;
+  padding-top: 10px;
+  a {
+    font-size: $font-size-xs;
+    font-weight: 400;
+  }
+}
+
+#prev {
+  line-height: 36px;
+  text-align: left;
+  padding: 0;
+  a {
+    @include transition(0s);
+    &:hover {
+      color: $mh-color-primary;
+    }
+  }
+}
+
+#next {
+  line-height: 36px;
+  text-align: right;
+  padding: 0;
+  a {
+    @include transition(0s);
+    &:hover {
+      color: $mh-color-primary;
+    }
+  }
+}
+
+#today {
+  font-weight: 400;
+  background: $mh-color-primary;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .calendar_wrap {
+    padding: 0 15px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}

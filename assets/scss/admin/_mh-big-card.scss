@@ -1,0 +1,29 @@
+.mh-new-field {
+  padding: 24px;
+  background: #f4f4f4;
+  label {
+    margin-bottom: 0;
+  }
+  input, select {
+    padding: 0;
+  }
+  p {
+    margin-top: 0;
+  }
+  .mdl-button {
+    margin-top: 6px;
+  }
+}
+
+.mh-new-field__input-wrapper {
+  margin-bottom: 12px;
+  label {
+    margin-bottom: 6px;
+  }
+}
+
+.mh-new-field--agent {
+  .mdl-button {
+    margin-top: 16px;
+  }
+}

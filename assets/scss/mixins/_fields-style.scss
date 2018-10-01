@@ -1,0 +1,21 @@
+@mixin fields-style {
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid #c3c3c5;
+  padding: 10px 20px;
+  line-height: 24px;
+  border-radius: 0;
+  margin-bottom: 12px;
+  color: #666666;
+  font-style: italic;
+  text-align: center;
+  background: #fff;
+  &:focus, &:active {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 19px;
+    padding-right: 19px;
+    border: 2px solid $mh-color-primary;
+    background: rgba(41, 170, 227, 0.05);
+  }
+}

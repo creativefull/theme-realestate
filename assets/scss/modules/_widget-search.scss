@@ -1,0 +1,21 @@
+/* Widget Search */
+.widget_search {
+  margin-right: 50px;
+  @include clearfix();
+  input.search-field {
+    text-align: left!important;
+    border-right:0px solid #fff!important;
+  }
+  .mdl-button {
+    position: absolute;
+    top: 0;
+    min-width: 46px;
+    right: -46px;
+    height: 46px;
+    line-height: 46px;
+  }
+  .search-form {
+    margin-right: 46px;
+    position: relative;
+  }
+}

@@ -1,0 +1,14 @@
+/* Easy Social Share Buttons Plugin - hide options that need activation */
+.essb-nav-tab.essb-tab-update,
+.essb_license-activation-notice,
+.essb-btn.essb-btn-green,
+.essb-btn.essb-btn-light,
+.essb-btn.essb-btn-orange,
+#essb-menu-optin-10,
+#essb-menu-optin-11,
+#essb-menu-optin-12,
+.essb-plugin-update,
+#essb-check-forupdate,
+.essb-options-hint {
+  display: none !important;
+}

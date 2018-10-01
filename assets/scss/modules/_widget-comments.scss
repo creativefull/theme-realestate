@@ -1,0 +1,28 @@
+/* Widget Comments */
+.widget_recent_comments ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.recentcomments {
+  padding: 12px 0 11px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-style: italic;
+  .comment-author-link {
+    position: relative !important;
+  }
+  &:first-child {
+    padding-top: 0;
+  }
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: 0;
+  }
+  a {
+    &:hover {
+      color: $mh-color-primary;
+    }
+  }
+}

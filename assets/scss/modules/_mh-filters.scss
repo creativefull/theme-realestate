@@ -1,0 +1,94 @@
+/* Filters */
+.mh-filters {
+  display: none;
+  @include breakpoint(sm) {
+    display: block;
+    background: #f2f2f2;
+    margin-bottom: 12px;
+    padding: 0 12px;
+    color: #222;
+    @include clearfix;
+  }
+}
+
+.mh-filters__sort {
+  display: inline-block;
+  float: left;
+  line-height: 36px;
+  font-size: $font-size-xs;
+  i {
+    margin-right: 3px;
+  }
+  @include breakpoint(lg) {
+    margin-right: 12px;
+  }
+}
+
+.mh-filters__left {
+  float: left;
+  font-weight: 400;
+}
+
+.mh-filters__right {
+  float: right;
+  display: block;
+  text-align: right;
+  button {
+    outline: 0px;
+    position: relative;
+    line-height: 36px;
+    height: 36px;
+    font-size: $font-size-s;
+    color: #999999;
+    font-weight: 400;
+    background: transparent;
+    border: 0;
+    padding: 2px 0 0 0;
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.mh-filters__buttons {
+  float: left;
+  display: inline-block;
+  button {
+    float: left;
+  }
+}
+
+.mh-filters__button {
+  padding: 2px 7px;
+  position: relative;
+  background: transparent;
+  font-weight: 400;
+  margin: 3px 9px 3px 0;
+  color: #222;
+  text-transform: uppercase;
+  font-size: $font-size-xs;
+  line-height: 24px;
+  border-radius: 0px;
+  border: 1px solid transparent;
+  @include breakpoint(1025px) {
+    &:hover {
+      color: #222;
+    }
+  }
+  @include breakpoint(lg) {
+    padding: 3px 9px;
+  }
+  &.mh-filters__button--active {
+    color: $mh-color-primary;
+    @include breakpoint(1025px) {
+      &:hover {
+        color: $mh-color-primary;
+      }
+    }
+  }
+}
+
+button.mh-filters__right__button--active {
+  color: $mh-color-primary;
+}

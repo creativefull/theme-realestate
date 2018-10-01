@@ -1,0 +1,120 @@
+/* Loader */
+.mh-loader-wrapper {
+  height: 144px;
+}
+
+@media(max-width: 1024px) {
+  .mh-loader-wrapper.mh-loader--mobile-searchform {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 999999999999;
+    .mh-loader {
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin: -2em auto 0 auto;
+    }
+  }
+
+}
+
+.mh-loader-wrapper-map {
+  background: rgba(255, 255, 255, 0.9);
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: $font-size-xxxl;
+  color: $mh-color-primary;
+  .mh-loader {
+    position: absolute;
+    margin-top: -2em;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.mh-loader,
+.mh-loader:before,
+.mh-loader:after {
+  background: $mh-color-primary;
+  -webkit-animation: mh-loader-animation 1s infinite ease-in-out;
+  animation: mh-loader-animation 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+
+.mh-loader {
+  color: $mh-color-primary;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+.mh-loader:before,
+.mh-loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+
+.mh-loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.mh-loader:after {
+  left: 1.5em;
+}
+
+@-webkit-keyframes mh-loader-animation {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+@keyframes mh-loader-animation {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+.wpb_single_image {
+  display: none !important;
+}
+
+.js_active .wpb_single_image {
+  display: block !important;
+}

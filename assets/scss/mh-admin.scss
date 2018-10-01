@@ -1,0 +1,359 @@
+@import "config";
+@import "mixins";
+@import "admin/_mixins";
+@import "admin/_acf";
+@import "admin/_clearfix";
+@import "admin/_essb";
+@import "admin/_general";
+@import "admin/_iconpicker";
+@import "admin/_mdl";
+@import "admin/_mh-admin-checkbox";
+@import "admin/_mh-big-card";
+@import "admin/_mh-flaticons";
+@import "admin/_mh-grid-alternative";
+@import "admin/_mh-single-attribute";
+@import "admin/_mh-small-card";
+@import "admin/_mh-tooltip";
+@import "admin/_mmm";
+@import "admin/_redux";
+@import "admin/_revolution-slider";
+@import "admin/_selectize";
+@import "admin/_static-values";
+@import "admin/_vc";
+
+@font-face {
+  font-family: "Flaticon-front";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Flaticon.woff") format("woff"),
+  url("../fonts/Flaticon.ttf") format("truetype"),
+  url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon-front";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flatfront-"]:before, [class*=" flatfront-"]:before,
+[class^="flatfront-"]:after, [class*=" flatfront-"]:after {
+  font-family: Flaticon-front;
+  font-style: normal;
+}
+
+.flatfront-air-conditioner:before {
+  content: "\f100";
+}
+
+.flatfront-apartment:before {
+  content: "\f101";
+}
+
+.flatfront-area:before {
+  content: "\f102";
+}
+
+.flatfront-bath:before {
+  content: "\f103";
+}
+
+.flatfront-bath-2:before {
+  content: "\f104";
+}
+
+.flatfront-bathtub:before {
+  content: "\f105";
+}
+
+.flatfront-bed:before {
+  content: "\f106";
+}
+
+.flatfront-bulb:before {
+  content: "\f107";
+}
+
+.flatfront-city:before {
+  content: "\f108";
+}
+
+.flatfront-city-2:before {
+  content: "\f109";
+}
+
+.flatfront-computer:before {
+  content: "\f10a";
+}
+
+.flatfront-construction:before {
+  content: "\f10b";
+}
+
+.flatfront-construction-2:before {
+  content: "\f10c";
+}
+
+.flatfront-date:before {
+  content: "\f10d";
+}
+
+.flatfront-dishwasher:before {
+  content: "\f10e";
+}
+
+.flatfront-door:before {
+  content: "\f10f";
+}
+
+.flatfront-fence:before {
+  content: "\f110";
+}
+
+.flatfront-fireplace:before {
+  content: "\f111";
+}
+
+.flatfront-full-size:before {
+  content: "\f112";
+}
+
+.flatfront-furniture:before {
+  content: "\f113";
+}
+
+.flatfront-garage:before {
+  content: "\f114";
+}
+
+.flatfront-home:before {
+  content: "\f115";
+}
+
+.flatfront-home-2:before {
+  content: "\f116";
+}
+
+.flatfront-home-3:before {
+  content: "\f117";
+}
+
+.flatfront-home-4:before {
+  content: "\f118";
+}
+
+.flatfront-home-5:before {
+  content: "\f119";
+}
+
+.flatfront-home-6:before {
+  content: "\f11a";
+}
+
+.flatfront-house-plan:before {
+  content: "\f11b";
+}
+
+.flatfront-house-plan-2:before {
+  content: "\f11c";
+}
+
+.flatfront-interface:before {
+  content: "\f11d";
+}
+
+.flatfront-layers:before {
+  content: "\f11e";
+}
+
+.flatfront-lift:before {
+  content: "\f11f";
+}
+
+.flatfront-location:before {
+  content: "\f120";
+}
+
+.flatfront-location-2:before {
+  content: "\f121";
+}
+
+.flatfront-mail:before {
+  content: "\f122";
+}
+
+.flatfront-mail-2:before {
+  content: "\f123";
+}
+
+.flatfront-map:before {
+  content: "\f124";
+}
+
+.flatfront-medical:before {
+  content: "\f125";
+}
+
+.flatfront-microwave:before {
+  content: "\f126";
+}
+
+.flatfront-multimedia:before {
+  content: "\f127";
+}
+
+.flatfront-office:before {
+  content: "\f128";
+}
+
+.flatfront-office-2:before {
+  content: "\f129";
+}
+
+.flatfront-owen:before {
+  content: "\f12a";
+}
+
+.flatfront-parquet:before {
+  content: "\f12b";
+}
+
+.flatfront-phone:before {
+  content: "\f12c";
+}
+
+.flatfront-pin:before {
+  content: "\f12d";
+}
+
+.flatfront-prize:before {
+  content: "\f12e";
+}
+
+.flatfront-rent:before {
+  content: "\f12f";
+}
+
+.flatfront-roof:before {
+  content: "\f130";
+}
+
+.flatfront-school:before {
+  content: "\f131";
+}
+
+.flatfront-school-2:before {
+  content: "\f132";
+}
+
+.flatfront-search:before {
+  content: "\f133";
+}
+
+.flatfront-shower:before {
+  content: "\f134";
+}
+
+.flatfront-sofa:before {
+  content: "\f135";
+}
+
+.flatfront-sofa-2:before {
+  content: "\f136";
+}
+
+.flatfront-sold:before {
+  content: "\f137";
+}
+
+.flatfront-stairs:before {
+  content: "\f138";
+}
+
+.flatfront-swimming-pool:before {
+  content: "\f139";
+}
+
+.flatfront-technology:before {
+  content: "\f13a";
+}
+
+.flatfront-transport:before {
+  content: "\f13b";
+}
+
+.flatfront-wall:before {
+  content: "\f13c";
+}
+
+.flatfront-wardrobe:before {
+  content: "\f13d";
+}
+
+.flatfront-wifi:before {
+  content: "\f13e";
+}
+
+.flatfront-window:before {
+  content: "\f13f";
+}
+
+#acf-myhome_estate_location > div:nth-child(3) {
+  padding: 0 0 12px !important
+}
+
+#acf-myhome_estate_location > div:nth-child(3) input[type=checkbox] {
+  margin-top: -3px;
+}
+
+.acf-google-map {
+  border: none !important;
+}
+
+#appscreo_news,
+#redux_dashboard_widget {
+  display: none !important;
+}
+
+label[for=appscreo_news-hide],
+label[for=redux_dashboard_widget-hide] {
+  display: none !important;
+}
+
+#wp-admin-bar-essb {
+  display: none !important;
+}
+
+/* Icon top */
+#wp-admin-bar-myhome-panel > a.ab-item:before {
+  content: '\f108';
+  margin-top: 3px;
+}
+
+#wp-admin-bar-myhome-panel-add-property > a.ab-item:before {
+  content: '\f502';
+  margin-top: 3px;
+}
+
+#wp-admin-bar-MyHome span.ab-icon.dashicons-portfolio {
+  margin-top: 2px !important;
+}
+
+.mh-small-card--single-property-page {
+  input[type="text"] {
+    padding: 6px 12px !important;
+    border: 1px solid #0073aa !important;
+    min-height: 34px !important;
+  }
+
+  .mh-small-card__title {
+    line-height: 34px !important;
+  }
+
+  .mdl-button--edit-label {
+    margin-top: 0 !important;
+  }
+}

@@ -1,0 +1,27 @@
+/* Widget title */
+.mh-widget-title {
+  margin-bottom: 12px;
+  @include clearfix;
+  @include breakpoint(sm) {
+    margin-bottom: 24px;
+  }
+}
+
+.mh-widget-title__text {
+  position: relative;
+  text-transform: none;
+  font-weight: 400;
+  font-size: $font-size-l;
+  margin-bottom: 0;
+  padding-top: 9px;
+  @include clearfix;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: $mh-color-primary;
+    content: '';
+  }
+}

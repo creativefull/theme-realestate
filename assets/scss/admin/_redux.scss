@@ -1,0 +1,15 @@
+.redux-container .redux-main .showDefaults {
+  display: none;
+}
+
+a[href*="plugins.php?ReduxFrameworkPlugin=demo"] {
+  display: none !important;
+}
+
+input#redux_save {
+  margin-right: 4px;
+}
+
+.redux-notice {
+  dispaly: none !important;
+}

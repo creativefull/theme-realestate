@@ -1,0 +1,21 @@
+/* Clients */
+.mh-clients--image-filter {
+  img {
+    @include grayscale(100%);
+    @include mh-transition();
+    @include breakpoint(1025px) {
+      &:hover {
+        filter: none;
+        @include grayscale(0%);
+      }
+    }
+  }
+}
+
+.mh-client {
+  padding-bottom: 24px;
+  img {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}

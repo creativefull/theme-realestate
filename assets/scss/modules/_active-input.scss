@@ -1,0 +1,78 @@
+/* Active input */
+.mh-active-input-primary {
+  .mh-active-input {
+    input {
+      color: $mh-color-primary;
+      border: 2px solid $mh-color-primary;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      background: rgba($mh-color-primary, 0.05);
+    }
+    .bootstrap-select.btn-group > .btn {
+      color: $mh-color-primary;
+      border: 2px solid $mh-color-primary;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background: rgba($mh-color-primary, 0.05);
+    }
+    .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+      color: $mh-color-primary;
+    }
+  }
+  .mh-search__panel > div:not(:first-child) {
+    .is-checked {
+      .mdl-radio__outer-circle {
+        border-color: $mh-color-primary;
+      }
+      .mdl-radio__inner-circle {
+        background: $mh-color-primary;
+      }
+      .mdl-radio__label {
+        color: $mh-color-primary;
+      }
+    }
+  }
+}
+
+body.mh-active-input-dark {
+  $active-border-color: #4d4d4d;
+  .mh-active-input {
+    input {
+      color: #222;
+      border: 2px solid $active-border-color;
+      background: #fff;
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+    .bootstrap-select.btn-group > .btn {
+      color: #222;
+      border: 2px solid $active-border-color;
+      background: #fff;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+      color: #222;
+    }
+  }
+  input[type=text],
+  input[type=password],
+  input[type=email],
+  input[type=search] {
+    &:active,
+    &:focus {
+      color: #222;
+      border-color: $active-border-color;
+      background: #fff;
+    }
+  }
+  .dropdown-menu > li.selected a {
+    background: #666666;
+    color: #fff;
+  }
+  textarea:focus,
+  textarea:active {
+    border-color: $active-border-color;
+    background: #fff;
+  }
+}

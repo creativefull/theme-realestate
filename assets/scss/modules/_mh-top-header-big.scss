@@ -1,0 +1,207 @@
+/* Top Header Big */
+.mh-top-header-big {
+  background: #fff;
+  @include clearfix();
+  @include breakpoint($mobile-navbar-max-width) {
+    height: 120px;
+  }
+}
+
+.mh-top-header-big__content {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mh-top-header-big__logo-placeholder {
+  display: none;
+  @include breakpoint($mobile-navbar-max-width) {
+    float: left;
+    display: inline-block;
+    width: 155px;
+    margin-right: 30px;
+    height: 120px;
+  }
+  @include breakpoint(lg) {
+    width: 285px;
+  }
+}
+
+.mh-top-header-big__element:not(.mh-top-header-big__panel) a:hover {
+  color: $mh-color-primary;
+}
+
+.mh-top-header-big__logo {
+  display: none;
+  @include breakpoint(1024px) {
+    position: absolute;
+    float: left;
+    display: inline-block;
+    height: 120px;
+    text-align: left;
+    z-index: 2;
+    img {
+      display: inline-block;
+      margin-top: 35px;
+      height: 50px;
+    }
+  }
+
+  @include breakpoint(1200px) {
+    width: 285px;
+  }
+}
+
+.mh-top-header-big__element {
+  display: block;
+  position: relative;
+  .mh-top-header-big__element__icon-big {
+    margin-right: 6px;
+    position: relative;
+    top: 1px;
+    font-size: $font-size-s;
+    margin-bottom: 6px;
+    display: inline-block;
+  }
+  @include breakpoint(sm) {
+    width: 50%;
+    float: left;
+  }
+  font-size: $font-size-xs;
+  text-align: left;
+  color: #4d4d4d;
+  padding: 0px;
+  @include breakpoint($mobile-navbar-max-width) {
+    padding: 0;
+    width: auto;
+    display: table;
+    margin-right: 48px;
+    height: 120px;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: italic;
+    .mh-top-header-big__element__icon-big {
+      position: absolute;
+      font-size: 30px;
+      line-height: 120px;
+      height: 120px;
+      margin-right: 16px;
+    }
+  }
+}
+
+.mh-top-header-big__element--address {
+  @include breakpoint($mobile-navbar-max-width) {
+    max-width: 160px;
+  }
+}
+
+.mh-top-header-big__value {
+  display: inline-block;
+  @include breakpoint($mobile-navbar-max-width) {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 48px;
+    margin-right: 48px;
+    height: 120px;
+  }
+}
+
+.mh-top-header-big__social-icons {
+  display: none;
+  @include breakpoint($mobile-navbar-max-width) {
+    display: inline-block;
+    float: right;
+    a {
+      color: #4d4d4d;
+      font-size: 21px;
+      margin-left: 18px;
+      line-height: 120px;
+      &:hover {
+        color: $mh-color-primary;
+      }
+    }
+  }
+}
+
+.mh-top-header-big__info-element__content {
+  @include breakpoint($mobile-navbar-max-width) {
+    padding: 48px 0;
+    height: 60px;
+    position: relative;
+    i {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.mh-top-header-big__info-element__info {
+  @include breakpoint($mobile-navbar-max-width) {
+    padding-left: 60px;
+  }
+}
+
+.mh-top-header-big__info-element {
+  @include breakpoint($mobile-navbar-max-width) {
+    position: relative;
+    margin-right: 48px;
+    i {
+      font-size: 30px;
+      margin-right: 16px;
+    }
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+.mh-top-header-big__info-element__info {
+  @include breakpoint($mobile-navbar-max-width) {
+    max-width: 130px;
+  }
+}
+
+.mh-top-header-big + .mh-navbar__wrapper {
+  @include breakpoint($mobile-navbar-max-width) {
+    .mh-navbar__header {
+      display: none !important;
+    }
+  }
+}
+
+.mh-top-header-big__panel {
+  margin-top: 3px;
+  margin-bottom: 6px;
+  @include breakpoint($mobile-navbar-max-width) {
+    margin: 0;
+    height: auto;
+    display: block;
+    margin-right: 0;
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    padding: 0 12px;
+    font-size: 13px;
+    line-height: 24px;
+    background: #fff;
+    a {
+      color: #4d4d4d;
+    }
+  }
+}
+
+.mh-top-header-big .mh-top-header-big__panel {
+  @include breakpoint($mobile-navbar-max-width) {
+    background: $mh-color-primary;
+    .mh-top-header__user-info__panel-link {
+      color: #fff;
+    }
+  }
+  @media (max-width: $mobile-navbar-max-width) {
+    background: #fff !important;
+  }
+}

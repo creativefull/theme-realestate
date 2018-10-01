@@ -1,0 +1,48 @@
+.mh-page-type-v2 {
+  background: #f2f2f2;
+  @include breakpoint(sm) {
+    padding-bottom: 36px;
+  }
+  .mh-menu ul li a,
+  .widget_pages ul li a,
+  .widget_meta ul li a,
+  .widget_recent_entries ul li a,
+  .widget_nav_menu ul li a,
+  .widget_categories ul li a,
+  .widget_archive ul li a {
+    border-color: #fff;
+  }
+}
+
+.mh-image-shadow {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.mh-page-type-v2__inner {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.mh-page-type-v2__content {
+  background: #fff;
+  padding: 12px;
+  margin-bottom: 24px;
+  @include breakpoint(sm) {
+    padding: 24px;
+    margin-bottom: 0;
+  }
+  a {
+    color: $mh-color-primary;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.mh-page-type-v2__sidebar {
+  backround: #fff;
+  @include breakpoint(sm) {
+    padding-left: 48px;
+  }
+}

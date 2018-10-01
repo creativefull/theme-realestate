@@ -1,0 +1,261 @@
+/* Post single */
+.mh-post-single__header {
+  margin-bottom: 12px;
+}
+
+.mh-post-single__title {
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-weight: 400;
+  font-size: $font-size-l;
+  @include breakpoint(sm) {
+    font-size: $font-size-xxl;
+  }
+}
+
+.mh-post-single__main-image {
+  display: block;
+  margin-bottom: 12px;
+  @include breakpoint(sm) {
+    margin-bottom: 24px;
+  }
+}
+
+.mh-post-single__content {
+  @include breakpoint(1025px) {
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+.mh-post-single__section__heading {
+  font-size: $font-size-m;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  @include clearfix();
+  margin-bottom: 24px;
+}
+
+.mh-post-single__meta {
+  font-size: $font-size-xs;
+  margin: 0 0 12px 0;
+  padding: 0;
+  list-style-type: none;
+  @include breakpoint(sm) {
+    margin-bottom: 24px;
+  }
+  a {
+    line-height: 20px;
+    &:hover {
+      color: $mh-color-primary;
+    }
+  }
+  li {
+    display: inline-block;
+    position: relative;
+    padding: 0 9px 0 0;
+    margin-right: 9px;
+    line-height: 24px;
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 6px;
+      background: #ccc;
+      height: 12px;
+      width: 1px;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    span {
+      @include breakpoint(sm) {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.mh-post-single__pagination {
+  border-top: 1px solid #c3c3c5;
+  text-align: center;
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  word-spacing: 6px;
+  span {
+    display: inline-block;
+    height: 1px;
+    width: 30px;
+  }
+  a {
+    color: #222;
+    @include breakpoint(1025px) {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.mh-post-single__nav {
+  padding-top: 24px;
+  border-top: 1px solid #f0f0f0;
+  margin-bottom: 24px;
+}
+
+.mh-post-single__nav__prev,
+.mh-post-single__nav__next {
+  font-size: $font-size-s;
+  a {
+    font-style: italic;
+    color: #666666;
+    font-size: $font-size-s;
+  }
+  span {
+    color: #222;
+    font-size: $font-size-m;
+    font-style: normal;
+    text-transform: none;
+    font-weight: 400;
+    display: block;
+  }
+}
+
+.mh-post-single__nav__prev {
+  position: relative;
+  height: 100%;
+  @include mh-transition();
+  @include breakpoint(sm) {
+    padding-right: 24px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: $mh-color-primary;
+      @include mh-transition();
+    }
+    @include breakpoint(1025px) {
+      &:hover {
+        padding-left: 24px;
+        padding-right: 0;
+        &:before {
+          width: 16px;
+        }
+      }
+    }
+  }
+}
+
+.mh-post-single__nav__next {
+  margin-top: 24px;
+  position: relative;
+  height: 100%;
+  @include mh-transition();
+  @include breakpoint(sm) {
+    text-align: right;
+    margin-top: 0;
+    padding-left: 24px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 100%;
+      background: $mh-color-primary;
+      @include mh-transition();
+    }
+    @include breakpoint(1025px) {
+      &:hover {
+        padding-left: 0;
+        padding-right: 24px;
+        &:before {
+          width: 16px;
+        }
+      }
+    }
+  }
+}
+
+.mh-post-single__password {
+  padding: 28px 18px 12px 18px;
+  margin-bottom: 24px;
+  background: #f2f2f2;
+  form {
+    @include clearfix();
+  }
+  input {
+    text-align: left;
+    margin-bottom: 12px;
+  }
+  strong {
+    display: block;
+    margin-bottom: -16px;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.mh-post-single-main-image {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 12px;
+  @include breakpoint(sm) {
+    margin-bottom: 24px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+    background: #000;
+    @include transition(opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1));
+  }
+  @include breakpoint(1025px) {
+    &:hover {
+      &:after {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+// IE 9.0 + Fix
+@media screen and (min-width:0\0) and (min-resolution: +72dpi) {
+  .mh-post-single-main-image img {
+    width: 100%;
+  }
+}
+
+.mh-post .post-content {
+  blockquote {
+    margin-bottom: 12px;
+    border-left: 3px solid $mh-color-primary;
+    background: #f1f1f1;
+    padding: 12px;
+    p:last-child {
+      margin-bottom: 0;
+    }
+    @include breakpoint(sm) {
+      margin-bottom: 24px;
+    }
+  }
+  a:hover {
+    color: $mh-color-primary
+  }
+}

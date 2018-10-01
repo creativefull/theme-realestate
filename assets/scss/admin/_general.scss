@@ -1,0 +1,132 @@
+.toplevel_page_myhome_attributes {
+  #wpcontent {
+    background: #f4f4f4;
+    @include clearfix();
+  }
+  #wpfooter {
+    display: none;
+  }
+  .notice, div.error, div.updated {
+    margin: 12px 12px 12px 0px;
+  }
+  #myhome-backend-panel {
+    margin-top: 24px;
+  }
+}
+
+.update-nag.bsf-update-nag {
+  display: none !important;
+}
+
+#advanced-custom-fields-pro-update .notice,
+#js_composer-update {
+  display: none;
+}
+
+/* Sweet Alert Body Fix */
+body {
+  padding-right: 0px !important;
+}
+
+.mh-attributes-wrapper {
+  @include clearfix();
+  input,
+  select {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.taxonomy-post_tag {
+  @include clearfix();
+}
+
+select[multiple] {
+  width: 100%;
+  min-height: 110px !important;
+  height: auto !important;
+}
+
+.mh-panel-width-100 {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  & > div {
+    padding: 0 3px;
+  }
+  @include clearfix();
+}
+
+.mh-panel-width-50 {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  & > div {
+    padding: 0 3px;
+  }
+}
+
+.mdl-layout-subtitle {
+  line-height: 36px;
+  position: relative;
+  top: 7px;
+  left: 12px;
+}
+
+.toplevel_page_myhome_attributes {
+  input,
+  select {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.mdl-card__input-wrapper--first-half {
+  width: 50%;
+  float: left;
+  & > div {
+    margin-right: 6px;
+  }
+}
+
+.mdl-card__input-wrapper--second-half {
+  width: 50%;
+  float: left;
+  & > div {
+    margin-left: 6px;
+  }
+}
+
+.mh-admin-location {
+  input {
+    margin-bottom: 6px;
+  }
+  #google-map {
+    widtH: 100%;
+    height: 400px;
+  }
+}
+
+.mh-admin-location__label {
+  margin-top: 6px;
+  margin-bottom: 3px;
+  font-weight: 700;
+}
+
+.redux-container .redux-group-tab .redux-section-desc {
+  margin-bottom: 15px;
+  color: #222;
+  border-left: 5px solid #0084b9;
+  background: rgba(0, 132, 185, 0.13);
+  padding: 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.essb-options .default-preview-image {
+  width: auto !important;
+}
+
+.mh-admin-static-link {
+  margin-top: 12px;
+}

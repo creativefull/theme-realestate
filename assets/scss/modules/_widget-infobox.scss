@@ -1,0 +1,27 @@
+/* Widget Infobox */
+.widget-infobox {
+  .mdl-button {
+    margin-bottom: 0;
+  }
+  img[src=""] {
+    display: none;
+  }
+}
+
+.widget-infobox__image-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  @include mh-img-hover();
+}
+
+.widget-infobox__image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.widget-infobox__text {
+  margin-bottom: 24px;
+  font-style: italic;
+}

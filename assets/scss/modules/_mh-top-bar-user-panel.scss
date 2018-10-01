@@ -1,0 +1,157 @@
+.mh-top-bar-user-panel {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.mh-top-bar-user-panel__user-menu {
+  display: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  margin-top: 36px;
+  right: 0;
+  z-index: 999999999999;
+  background: #fff;
+  list-style: none;
+  width: 205px;
+  li {
+    margin: 0;
+  }
+  a,
+  button {
+    color: #666;
+    background: #f9f9f9;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    padding: 12px 12px;
+    line-height: 24px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 0;
+    font-family: $font-one;
+    i {
+      margin-right: 6px;
+    }
+    &:hover {
+      background: #f0f0f0;
+      color: #222 !important;
+    }
+  }
+  @include breakpoint($mobile-navbar-max-width) {
+    &:hover {
+      display: block;
+    }
+  }
+}
+
+.mh-top-bar-user-panel__user-info {
+  position: relative;
+  display: inline-block;
+  padding: 0 12px;
+  height: 34px;
+  img[src*="http"] {
+    border-radius: 50%;
+    height: 24px;
+    margin-top: -4px;
+    margin-right: 6px;
+  }
+  & > a {
+    display: inline-block;
+    line-height: 36px;
+  }
+}
+
+.mh-top-header--primary .mh-top-bar-user-panel__user-info {
+  background: $mh-color-primary;
+  & > a {
+    color: #fff;
+  }
+}
+
+.mh-top-bar-user-panel__main-link {
+  font-size: 13px;
+  @include breakpoint($mobile-navbar-max-width) {
+    &:hover {
+      + .mh-top-bar-user-panel__user-menu {
+        display: block;
+      }
+    }
+  }
+}
+
+.mh-top-header .mh-top-bar-user-panel__main-link {
+  @include breakpoint($mobile-navbar-max-width) {
+    &:before {
+      content: '';
+      height: 20px;
+      width: 1px;
+      background: #f0f0f0;
+      position: absolute;
+      top: 8px;
+      left: -12px;
+    }
+  }
+}
+
+.mh-top-bar-user-panel-small {
+  .mh-top-bar-user-panel {
+    position: static;
+  }
+  .mh-top-bar-user-panel > div {
+    padding-left: 24px;
+  }
+  .mh-top-bar-user-panel__user-info {
+    padding: 0;
+  }
+  @include breakpoint($mobile-navbar-max-width) {
+    display: inline-block;
+    position: relative;
+  }
+}
+
+.mh-top-header--default .mh-top-bar-user-panel__user-info {
+  background: transparent;
+  a {
+    color: #222;
+  }
+}
+
+.mh-top-header-big {
+  .mh-top-bar-user-panel__user-info {
+    background: $mh-color-primary;
+    & > a {
+      color: #fff;
+    }
+  }
+
+  .mh-top-header--primary .mh-top-bar-login-register {
+    color: #fff;
+  }
+
+  @media (max-width: $mobile-navbar-max-width) {
+    .mh-top-bar-user-panel {
+      position: static;
+      right: 0;
+    }
+    .mh-top-bar-user-panel__user-info {
+      background: #fff !important;
+      padding: 0;
+      > a {
+        color: #222;
+      }
+    }
+  }
+}
+
+.mh-hide-top-bar-on-mobile {
+  .mh-top-header,
+  .mh-top-header-big {
+    display: none;
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+}

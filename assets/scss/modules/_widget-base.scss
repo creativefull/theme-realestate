@@ -1,0 +1,107 @@
+/* Widget */
+.widget-area,
+.widget {
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.mh-menu,
+.widget_pages,
+.widget_meta,
+.widget_recent_entries,
+.widget_nav_menu,
+.widget_categories,
+.widget_archive {
+  ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    font-size: $font-size-xs;
+    li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      @include mh-transition();
+      a {
+        width: 100%;
+        position: relative;
+        color: #222;
+        display: block;
+        padding: 14px 30px 14px 0;
+        border-bottom: 1px solid #f0f0f0;
+        overflow: hidden;
+        @include mh-transition();
+        &:before {
+          position: absolute;
+          left: -12px;
+          top: 50%;
+          background: $mh-color-primary;
+          height: 2px;
+          width: 12px;
+          content: '';
+          display: block;
+          @include mh-transition();
+        }
+        @include breakpoint(1025px) {
+          &:hover {
+            padding-left: 30px;
+            padding-right: 0px;
+            color: #000;
+            &:before {
+              left: 0;
+            }
+          }
+        }
+      }
+      ul {
+        padding-left: 18px;
+      }
+    }
+  }
+  & > ul > li:last-child a {
+    border-bottom: none;
+  }
+}
+
+.widget_nav_menu ul li:last-child a {
+  border-bottom:0;
+}
+
+.mh-widget-title + ul {
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+.widget.widget_tag_cloud {
+  margin-bottom: (36 - 8) px;
+}
+
+.mh-layout__sidebar-left,
+.mh-layout__sidebar-right {
+  ul {
+    font-size: 16px;
+  }
+}
+
+/* Widget - fix "Show post counts" */
+.widget_categories,
+.widget_archive {
+  ul {
+    li {
+      min-height: 48px;
+      text-align: right;
+      padding-top: 15px;
+      a {
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: left;
+      }
+    }
+  }
+  .children {
+    margin-top: 16px;
+  }
+}

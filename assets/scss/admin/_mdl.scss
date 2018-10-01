@@ -1,0 +1,242 @@
+/* MDL */
+.toplevel_page_myhome_attributes {
+  .mdl-layout__tab-bar {
+    a:focus {
+      outline: none !important;
+      box-shadow: none;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  input:focus,
+  select:focus {
+    outline: none !important;
+    border-color: #0073aa !important;
+    box-shadow: none !important;
+  }
+  .mdl-layout__content {
+    background: #fff;
+    padding: 24px 24px 48px 24px;
+  }
+
+  .mdl-layout__content,
+  .mdl-layout {
+    overflow: visible;
+  }
+
+  .mdl-layout {
+    padding-right: 20px;
+  }
+
+  .mdl-card {
+    margin-bottom: 15px;
+    min-height: initial;
+    width: 100%;
+    padding: 0 12px;
+    .mdl-card__title {
+      cursor: move;
+      cursor: grab;
+      cursor: -moz-grab;
+      cursor: -webkit-grab;
+
+      &.attr[draggable="false"] {
+        cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing;
+      }
+    }
+
+    .mdl-card__title .mdl-button {
+      position: absolute;
+      right: 6px;
+      top: 7px;
+      color: #fff;
+    }
+    .mdl-layout__container {
+      width: 90%;
+    }
+  }
+  .mdl-card--general-settings {
+    width: 600px;
+  }
+  .mdl-card__body {
+    padding: 24px 12px;
+    background: #f4f4f4;
+  }
+  .mdl-card__title {
+    background: #23282d;
+    color: #fff;
+  }
+  input[type="text"],
+  select {
+    border-radius: 0px !important;
+    height: auto !important;
+    padding: 12px 12px !important;
+    font-size: 13px !important;
+    width: 100% !important;
+  }
+  input[type=checkbox], input[type=radio] {
+    margin: 0px 2px !important;
+  }
+  label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    width: 100%;
+  }
+  .label__subtitle {
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .mdl-card__input-wrapper {
+    padding-bottom: 9px;
+  }
+  .mdl-button--remove {
+    position: absolute;
+    right: 12px;
+  }
+  .mdl-layout__tab-bar--big {
+    .mdl-layout__tab {
+      padding-left: 50px;
+      [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+      [class^="flaticon-"]:after, [class*=" flaticon-"]:after,
+      .material-icons {
+        position: absolute;
+        left: 16px;
+        line-height: 48px;
+        font-size: 28px;
+      }
+    }
+
+  }
+  .mdl-layout__tab.is-active {
+    color: rgb(255, 255, 255);
+    background: #ff4081;
+  }
+  .mdl-layout__tab-bar-left-button {
+    display: none;
+  }
+  .mdl-layout__tab-bar {
+    padding: 0 0 0 24px !important;
+  }
+  .mdl-layout__header-row {
+    padding: 0 40px 0 24px;
+    height: 90px;
+  }
+  .mdl-layout-title {
+    font-size: 36px;
+  }
+  .mdl-card__subtitle {
+    font-size: 21px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    border-bottom: 2px solid #3f51b5;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .mdl-card__info {
+    background: rgba(63, 81, 181, 0.2);
+    padding: 24px 12px;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 6px;
+    position: relative;
+    i {
+      position: absolute;
+      top: 24px;
+      left: 12px;
+    }
+  }
+  .mdl-card__info__text {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+  }
+
+  .mdl-button {
+    i {
+      margin-top: -3px;
+    }
+  }
+
+  .mdl-card--create-new-field {
+    padding: 12px;
+    background: #f4f4f4;
+    width: 100%;
+    h2 {
+      margin-top: 0;
+    }
+  }
+  .mdl-card ul {
+    padding-left: 40px;
+    list-style-type: circle;
+  }
+}
+
+.mdl-layout__header {
+  background-color: #23282d !important;
+}
+
+.mdl-layout__tab-bar,
+.mdl-layout__tab-bar-container,
+.mdl-layout__tab-bar-button {
+  background: rgb(50, 55, 60) !important;
+}
+
+html {
+  .toplevel_page_myhome_attributes .mdl-layout {
+    padding-right: 0;
+  }
+
+  .mdl-layout__container {
+    width: 99%;
+    max-width: 990px;
+    height: auto;
+    @include clearfix();
+  }
+
+  .toplevel_page_myhome_attributes label {
+    display: block;
+    font-weight: 400;
+  }
+
+  .toplevel_page_myhome_attributes .mdl-layout__tab.is-active {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
+    display: none;
+  }
+}
+
+.page-content {
+  .mdl-layout__header,
+  .mdl-layout__tab-bar,
+  .mdl-layout__tab-bar-button {
+    background-color: rgb(50, 55, 60) !important;
+  }
+}
+
+.mdl-button--accent {
+  background-color: rgb(0, 115, 170) !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+}
+
+.mdl-button .dashicons {
+  position: relative;
+  top: 12px;
+  width: auto;
+  font-size: 14px;
+}
+
+.mdl-button.mdl-button--new-currency {
+  margin-bottom: 12px;
+}

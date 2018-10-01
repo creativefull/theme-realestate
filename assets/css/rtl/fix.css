@@ -1,0 +1,307 @@
+.before-fullwidth-row {
+    direction: ltr !important;
+}
+
+.before-fullwidth-row > div {
+    direction: rtl !important;
+}
+
+@media (min-width: 900px) {
+    .mh-slider__card-default__price {
+        left: 50%;
+    }
+}
+
+.mh-estate__agent__phone i,
+.mh-estate__agent__email i {
+    float: right;
+    position: relative;
+}
+
+.mh-accordion .ui-accordion-header i {
+    line-height: 16px;
+    float: right;
+    position: relative;
+}
+
+.mh-estate__details > div i {
+    float: right;
+    position: relative;
+}
+
+.mh-map-panel__element button .fa {
+    margin-right: 9px;
+    margin-left: 0px;
+}
+
+.mh-map-panel__element .fa.fa-angle-right {
+    margin-right: 0px;
+    margin-left: 9px;
+}
+
+#myhome-submit-property i .fa .fa-plus-circle {
+    float: right;
+    margin-left: 9px;
+}
+
+.mh-testimonials--cloud-text .mh-testimonial .mh-testimonial__photo {
+    right: 0;
+}
+
+.mh-testimonials--cloud-text .mh-testimonial .mh-testimonial__author-info {
+    padding-right: 0;
+    margin-right: 85px;
+    float: right !important;
+    margin-top: 12px !important;
+}
+
+.mh-filters__right button {
+    margin-left: 0;
+    margin-right: 12px;
+}
+
+.mh-testimonials--transparent .mh-testimonial .mh-testimonial__author-info {
+    margin-top: 12px;
+    float: right;
+}
+
+.mh-testimonial {
+    position: relative;
+}
+
+.mh-testimonial__photo {
+    right: 0 !important;
+}
+
+.mh-testimonial__inner {
+    position: relative;
+}
+
+.mh-testimonials--boxed .mh-testimonial__author-info {
+    float: right;
+    margin-top: 12px;
+}
+
+@media (min-width: 1024px) {
+    .mh-top-header__element {
+        margin-right: 0;
+        margin-left: 24px;
+    }
+}
+
+.single-estate .essb_links li a .essb_network_name {
+    margin-left: 10px !important;
+    margin-right: 0 !important;
+}
+
+.mdl-button__icon-left {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.mdl-button__icon-left {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+body:not(.vc_editor) .rev_slider_estate_placeholder .rev_slider_wrapper {
+    left: 0 !important;
+}
+
+#mega_main_menu.no-logo .nav_logo {
+    float: right;
+}
+
+#mega_main_menu > .menu_holder > .menu_inner > ul > li > .item_link:after {
+    left: 5px;
+    right: auto;
+}
+
+@media (min-width: 768px) {
+    .mh-slider__card-default__heading {
+        width: 100%;
+    }
+
+}
+
+.mh-thumbnail__featured {
+    right: auto;
+}
+
+.widget_search {
+    margin-left: 0;
+}
+
+.owl-carousel.owl-rtl {
+    direction: rtl !important;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+    float: right !important;
+}
+
+@media (min-width: 1023px) {
+    html body #mega_main_menu.mh-primary > .menu_holder > .menu_inner > ul > li:first-child > .item_link {
+        padding-right: 17px !important;
+    }
+}
+
+@media (min-width: 1023px) {
+    html body #mega_main_menu.mh-primary > .menu_holder > .menu_inner > ul > li > ul .menu-item > .item_link {
+        text-align: right;
+    }
+}
+
+.fa-angle-right:before {
+    content: "\f104";
+}
+
+.fa-angle-left:before {
+    content: "\f105";
+}
+
+.mh-estate-horizontal__date {
+    left: initial;
+}
+
+.mh-filters__right button:last-child {
+    margin-right: 12px;
+}
+
+@media (min-width: 1024px) {
+    .mh-top-header__element:last-of-type {
+        margin-left: 0 !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mh-top-header__element--social-icons > span > a {
+        margin-left: 0;
+    }
+}
+
+.mh-map-panel {
+    right: initial;
+}
+
+.mh-top-bar-user-panel__user-info {
+    height: 34px;
+}
+
+.infoBox > img {
+    right: initial;
+}
+
+.mh-top-header__element > a > i {
+    float: right;
+    top: -1px;
+}
+
+.tp-thumbs-inner-wrapper {
+    float: left !important;
+}
+
+.comment-edit-link i {
+    margin-left: 0px !important;
+    margin-right: 3px !important;
+}
+
+@media (min-width: 1023px) {
+    html body #mega_main_menu.mh-primary > .menu_holder > .menu_inner > ul > li > ul .menu-item > .item_link:before {
+        left: 0px !important;
+    }
+}
+
+.mh-user-panel__user a + .mh-user-panel__user__content {
+    padding-left: 0 !important;
+}
+
+.mh-currency-switcher .dropdown-toggle {
+    padding-left: 0 !important;
+}
+
+.mh-search__element #mh-currency_field .bootstrap-select.btn-group > .btn {
+    float: left !important;
+}
+
+.mh-search__element #mh-currency_field .bootstrap-select.btn-group > .dropdown-toggle .caret {
+    left: 8px !important;
+    right: initial;
+}
+
+.mh-search-currency-picker .dropdown-menu {
+    right: initial !important;
+    left: 0 !important;
+    min-width: initial !important;
+}
+
+.mh-search__2-col__left {
+    padding-right: 0 !important;
+}
+
+.mh-post-grid__btn-wrapper a {
+    right: initial !important;
+}
+
+.mh-search__2-col__right {
+    padding-left: 0 !important;
+}
+
+@media (min-width: 1023px) {
+    html body #mega_main_menu.mh-primary > .menu_holder > .menu_inner > ul > li > ul .menu-item > .item_link:before {
+        right: 2px !important;
+        top: 21px !important;
+    }
+}
+
+@media (min-width: 1023px) {
+    html body #mega_main_menu.mh-primary > .menu_holder > .menu_inner > ul > li > ul .menu-item.drop_to_left > .item_link:before {
+        right: initial !important;
+        left: 12px !important;
+    }
+}
+
+.swiper-container .swiper-button-next:before {
+    content: '\e824' !important;
+}
+
+.swiper-button-next {
+    padding-left: 0;
+}
+
+.swiper-button-prev {
+    padding-right: 0;
+}
+
+.swiper-container .swiper-button-prev:before {
+    content: '\e825' !important;
+    margin-right: 12px !important;
+}
+
+.mh-breadcrumbs .fa-angle-right:before {
+    content: "\f104" !important;
+}
+
+.mh-breadcrumbs .fa-angle-left:before {
+    content: "\f105" !important;
+}
+
+.mh-layout__content-left {
+    padding-right: 0 !important;
+}
+
+@media (min-width: 1023px) {
+    html body #mega_main_menu.mh-primary .nav_logo .logo_link {
+        margin-right: 0 !important;
+    }
+}
+
+.bootstrap-select.btn-group > .btn
+.caret {
+    right: 12px !important;
+}
+
+.mh-search__element #mh-currency_field .bootstrap-select.btn-group > .btn {
+    padding-right: 30px !important;
+    padding-left: 10px !important;
+}

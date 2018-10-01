@@ -1,0 +1,14 @@
+.mh-properties {
+    transition-property: opacity,transform;
+    transition-duration: .3s;
+}
+.mh-properties.mh-properties__hide {
+    opacity: 0;
+    transform: translateY(-100px);
+}
+.mh-properties .mh-thumbnail__inner {
+    transition: opacity .3s;
+}
+.mh-properties.mh-properties__hide .mh-thumbnail__inner {
+    opacity: 0;
+}

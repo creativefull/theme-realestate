@@ -1,0 +1,80 @@
+/* Form container */
+.mh-form-container {
+  max-width: 480px;
+  margin: 0 auto;
+  input, textarea {
+    @include placeholder {
+      color: #666666;
+    }
+    text-decoration: none;
+  }
+  input {
+    margin-bottom: 6px;
+    text-align: left;
+  }
+  textarea {
+    text-align: left;
+  }
+}
+
+.mh-form-container__textarea {
+  height: 233px;
+  margin-bottom: 0;
+}
+
+.mh-form-container__submit {
+  text-align: right;
+  @include clearfix();
+  margin-top: 4px;
+  margin-bottom: 18px;
+  input[type=submit] {
+    width: auto;
+    float: right;
+  }
+  .mdl-button {
+    width: 144px;
+  }
+}
+
+.mh-form-container__info {
+  background: rgba(242, 116, 116, 0.2);
+  padding: 12px;
+  border-left: 5px solid #f27474;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.mh-form-container__sending,
+.mh-form-container__error,
+.mh-form-container__success {
+  margin-bottom: 24px;
+  background: #f0f0f0;
+  padding: 6px 12px;
+}
+
+.mh-form-container__label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.mh-form-container__remember-me {
+  margin-bottom: 12px;
+  .mdl-checkbox__label {
+    top: -2px;
+    left: -3px;
+    position: relative;
+    text-transform: none;
+  }
+}
+
+.mh-form-container__reset {
+  cursor: pointer;
+  padding-bottom: 6px;
+  margin-top: -6px;
+  font-size: 14px;
+  &:hover {
+    color: $mh-color-primary;
+  }
+}

@@ -1,0 +1,152 @@
+/* Simple Box */
+.mh-simple-box-wrapper {
+  @include clearfix();
+}
+
+.mh-simple-box {
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+  @include clearfix();
+  text-align: center;
+  i {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+.mh-icon-wrapper {
+  margin-bottom: 12px;
+  @include breakpoint(md) {
+    margin-bottom: 24px;
+  }
+}
+
+.mh-simple-box__heading {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center
+}
+
+.mh-simple-box__btn {
+  margin-bottom: 36px;
+  @include breakpoint(sm) {
+    margin-bottom: 24px;
+  }
+}
+
+.mh-simple-box--left {
+  @include breakpoint(md) {
+    text-align: left;
+    .mh-simple-box__heading {
+      text-align: left;
+    }
+    .mh-icon-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: left;
+    }
+    .mh-simple-box__content {
+      padding-left: 84px;
+    }
+  }
+}
+
+.mh-simple-box--big-left {
+  @include breakpoint(md) {
+    text-align: left;
+    .mh-simple-box__heading {
+      text-align: left;
+    }
+    i {
+      font-size: 70px;
+      line-height: 70px;
+    }
+    .mh-simple-box__heading {
+      font-size: $font-size-l;
+    }
+    .mh-icon-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .mh-simple-box__content {
+      padding-left: 100px;
+    }
+  }
+}
+
+.mh-simple-box--center {
+  @include breakpoint(md) {
+    .mh-icon-wrapper {
+      margin-bottom: 24px;
+    }
+    .mh-simple-box__heading {
+      font-size: $font-size-xl;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.mh-simple-box--big-center {
+  @include breakpoint(md) {
+    i {
+      font-size: 70px;
+      line-height: 70px;
+    }
+    .mh-icon-wrapper {
+      margin-bottom: 24px;
+    }
+    .mh-simple-box__heading {
+      font-size: $font-size-xl;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.mh-simple-box--right {
+  @include breakpoint(md) {
+    text-align: right;
+    .mh-icon-wrapper {
+      margin-bottom: 24px;
+    }
+    .mh-icon-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .mh-simple-box__heading {
+      text-align: right;
+    }
+    .mh-simple-box__content {
+      padding-right: 80px;
+    }
+  }
+}
+
+.mh-simple-box--big-right {
+  @include breakpoint(md) {
+    text-align: right;
+    i {
+      font-size: 70px;
+      line-height: 70px;
+    }
+    .mh-simple-box__heading {
+      font-size: $font-size-l;
+      text-align: right;
+    }
+    .mh-icon-wrapper {
+      margin-bottom: 24px;
+    }
+    .mh-icon-wrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .mh-simple-box__content {
+      padding-right: 100px;
+    }
+  }
+}

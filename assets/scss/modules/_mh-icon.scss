@@ -1,0 +1,364 @@
+/* Icons */
+.mh-icon-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.mh-icon-container--round {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  border-width: 2px;
+  border-color: #ccc;
+  border-style: solid;
+  i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.mh-icon-container--rounded-rectangle {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  border-radius: 15px;
+  display: inline-block;
+  border-width: 2px;
+  border-color: #ccc;
+  border-style: solid;
+  i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.mh-icon-container--square {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  border-radius: 0;
+  display: inline-block;
+  border-width: 2px;
+  border-color: #ccc;
+  border-style: solid;
+  i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("assets/fonts/Flaticon.eot");
+  src: url("assets/fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+  url("assets/fonts/Flaticon.woff") format("woff"),
+  url(".assets/fonts/Flaticon.ttf") format("truetype"),
+  url("assets/fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../../assets/fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-style: normal;
+}
+
+.flaticon-air-conditioner:before {
+  content: "\f100";
+}
+
+.flaticon-apartment:before {
+  content: "\f101";
+}
+
+.flaticon-area:before {
+  content: "\f102";
+}
+
+.flaticon-bath:before {
+  content: "\f103";
+}
+
+.flaticon-bath-2:before {
+  content: "\f104";
+}
+
+.flaticon-bathtub:before {
+  content: "\f105";
+}
+
+.flaticon-bed:before {
+  content: "\f106";
+}
+
+.flaticon-bulb:before {
+  content: "\f107";
+}
+
+.flaticon-city:before {
+  content: "\f108";
+}
+
+.flaticon-city-2:before {
+  content: "\f109";
+}
+
+.flaticon-computer:before {
+  content: "\f10a";
+}
+
+.flaticon-construction:before {
+  content: "\f10b";
+}
+
+.flaticon-construction-2:before {
+  content: "\f10c";
+}
+
+.flaticon-date:before {
+  content: "\f10d";
+}
+
+.flaticon-dishwasher:before {
+  content: "\f10e";
+}
+
+.flaticon-door:before {
+  content: "\f10f";
+}
+
+.flaticon-fence:before {
+  content: "\f110";
+}
+
+.flaticon-fireplace:before {
+  content: "\f111";
+}
+
+.flaticon-full-size:before {
+  content: "\f112";
+}
+
+.flaticon-furniture:before {
+  content: "\f113";
+}
+
+.flaticon-garage:before {
+  content: "\f114";
+}
+
+.flaticon-home:before {
+  content: "\f115";
+}
+
+.flaticon-home-2:before {
+  content: "\f116";
+}
+
+.flaticon-home-3:before {
+  content: "\f117";
+}
+
+.flaticon-home-4:before {
+  content: "\f118";
+}
+
+.flaticon-home-5:before {
+  content: "\f119";
+}
+
+.flaticon-home-6:before {
+  content: "\f11a";
+}
+
+.flaticon-house-plan:before {
+  content: "\f11b";
+}
+
+.flaticon-house-plan-2:before {
+  content: "\f11c";
+}
+
+.flaticon-interface:before {
+  content: "\f11d";
+}
+
+.flaticon-layers:before {
+  content: "\f11e";
+}
+
+.flaticon-lift:before {
+  content: "\f11f";
+}
+
+.flaticon-location:before {
+  content: "\f120";
+}
+
+.flaticon-location-2:before {
+  content: "\f121";
+}
+
+.flaticon-mail:before {
+  content: "\f122";
+}
+
+.flaticon-mail-2:before {
+  content: "\f123";
+}
+
+.flaticon-map:before {
+  content: "\f124";
+}
+
+.flaticon-medical:before {
+  content: "\f125";
+}
+
+.flaticon-microwave:before {
+  content: "\f126";
+}
+
+.flaticon-multimedia:before {
+  content: "\f127";
+}
+
+.flaticon-office:before {
+  content: "\f128";
+}
+
+.flaticon-office-2:before {
+  content: "\f129";
+}
+
+.flaticon-owen:before {
+  content: "\f12a";
+}
+
+.flaticon-parquet:before {
+  content: "\f12b";
+}
+
+.flaticon-phone:before {
+  content: "\f12c";
+}
+
+.flaticon-pin:before {
+  content: "\f12d";
+}
+
+.flaticon-prize:before {
+  content: "\f12e";
+}
+
+.flaticon-rent:before {
+  content: "\f12f";
+}
+
+.flaticon-roof:before {
+  content: "\f130";
+}
+
+.flaticon-school:before {
+  content: "\f131";
+}
+
+.flaticon-school-2:before {
+  content: "\f132";
+}
+
+.flaticon-search:before {
+  content: "\f133";
+}
+
+.flaticon-shower:before {
+  content: "\f134";
+}
+
+.flaticon-sofa:before {
+  content: "\f135";
+}
+
+.flaticon-sofa-2:before {
+  content: "\f136";
+}
+
+.flaticon-sold:before {
+  content: "\f137";
+}
+
+.flaticon-stairs:before {
+  content: "\f138";
+}
+
+.flaticon-swimming-pool:before {
+  content: "\f139";
+}
+
+.flaticon-technology:before {
+  content: "\f13a";
+}
+
+.flaticon-transport:before {
+  content: "\f13b";
+}
+
+.flaticon-wall:before {
+  content: "\f13c";
+}
+
+.flaticon-wardrobe:before {
+  content: "\f13d";
+}
+
+.flaticon-wifi:before {
+  content: "\f13e";
+}
+
+.flaticon-window:before {
+  content: "\f13f";
+}
+
+/* Icon top */
+#wp-admin-bar-myhome-panel > a.ab-item:before {
+  content: '\f108';
+  margin-top: 3px;
+}
+
+#wp-admin-bar-myhome-panel-add-property > a.ab-item:before {
+  content: '\f502';
+  margin-top: 3px;
+}
+
+#wp-admin-bar-MyHome span.ab-icon.dashicons-portfolio {
+  margin-top: 2px !important;
+}
+
+#wp-admin-bar-myhome-panel-add-property {
+  display: none;
+}
+
+@media(max-width: 1200px) {
+  #wp-admin-bar-myhome-panel,
+  #wp-admin-bar-MyHome {
+    display: none;
+  }
+}

@@ -1,0 +1,247 @@
+/* Footer */
+.mh-footer__inner {
+  font-size: $font-size-xs;
+  padding: 24px 0 0 0;
+  select {
+    border: 1px solid #c3c3c5;
+    background: #222;
+  }
+  .calendar_wrap table caption {
+    font-size: $font-size-s;
+  }
+  .calendar_wrap table tbody a {
+    line-height: 30px;
+  }
+  .calendar_wrap table #today {
+    font-weight: 400;
+  }
+  label {
+    width: 100%;
+  }
+  .tagcloud a {
+    border-color: #ccc;
+  }
+  @include breakpoint(sm) {
+    padding-top: 48px;
+  }
+}
+
+.mh-footer__row {
+  @include breakpoint(md) {
+    margin: 0 -18px;
+    position: relative;
+  }
+  .mh-footer__row__column {
+    @include breakpoint(md) {
+      padding: 0 18px;
+      float: left;
+      width: 25%;
+    }
+  }
+  @include breakpoint(md) {
+    .mh-footer__row__column--1of2 {
+      width: 50%;
+    }
+    .mh-footer__row__column--1of3 {
+      width: 33.3%;
+    }
+    .mh-footer__row__column--1of5 {
+      width: 20%;
+    }
+  }
+}
+
+.mh-footer__heading {
+  font-size: $font-size-s;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  @include breakpoint(sm) {
+    margin-bottom: 24px;
+  }
+}
+
+.mh-footer__text {
+  margin-bottom: 24px;
+}
+
+.mh-footer__logo > img {
+  margin-bottom: 24px;
+  @include clearfix();
+  @include breakpoint(sm) {
+    margin-bottom: 36px;
+  }
+}
+
+.mh-footer__contact {
+  position: relative;
+  padding-left: 35px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  & > a {
+    @include transition(all 0s !important);
+  }
+  i {
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+  }
+}
+
+/* Footer top - widget area */
+.mh-footer-top {
+  $border-color: #ccc;
+
+  background: #f2f2f2;
+  .widget_pages,
+  .widget_meta,
+  .widget_recent_entries,
+  .widget_nav_menu,
+  .widget_categories,
+  .widget_archive {
+    ul li {
+      a {
+        border-color: $border-color;
+      }
+    }
+  }
+  .calendar_wrap table {
+    thead {
+      border-top: 1px solid $border-color;
+      border-bottom: 1px solid $border-color;
+    }
+    tfoot {
+      border-top: 1px solid $border-color;
+    }
+  }
+  .recentcomments {
+    border-color: $border-color;
+  }
+  .widget_rss {
+    > ul > li {
+      border-color: $border-color;
+    }
+  }
+}
+
+.mh-footer-top--dark {
+  $font-color: #fff;
+  $border-color: #4d4d4d;
+
+  color: #f0f0f0;
+  background: #333;
+  a {
+    color: $font-color;
+    @include breakpoint(1025px) {
+      &:hover,
+      &:active,
+      &:focus {
+        color: $mh-color-primary;
+        text-decoration: none;
+      }
+    }
+  }
+  .widget {
+    border: 0;
+    padding-bottom: 0;
+  }
+  .widget_pages,
+  .widget_meta,
+  .widget_recent_entries,
+  .widget_nav_menu,
+  .widget_categories,
+  .widget_archive {
+    ul li {
+      a {
+        color: $font-color;
+        border-color: $border-color;
+        @include breakpoint(1025px) {
+          &:hover,
+          &:focus,
+          &:active {
+            color: $font-color;
+          }
+        }
+      }
+    }
+  }
+  .calendar_wrap table {
+    thead {
+      border-top: 1px solid $border-color;
+      border-bottom: 1px solid $border-color;
+    }
+    tfoot {
+      border-top: 1px solid $border-color;
+    }
+  }
+  .recentcomments {
+    border-color: $border-color;
+    .comment-author-link {
+      color: #fff;
+    }
+    a {
+      color: $font-color;
+    }
+  }
+  .tagcloud a {
+    border-color: #666666;
+    color: $font-color;
+    @include mh-transition(0s);
+  }
+  .calendar_wrap table {
+    caption {
+      color: $font-color;
+    }
+    tbody a {
+      color: $font-color;
+      background: #222;
+    }
+    tfoot a {
+      color: $font-color;
+    }
+  }
+  .widget_rss {
+    > ul > li {
+      border-color: $border-color;
+    }
+  }
+  .mh-footer__heading {
+    color: $font-color;
+  }
+  .mh-footer__text-bottom {
+    color: $font-color;
+    a {
+      color: $font-color;
+    }
+  }
+  select {
+    background:#fff;
+    border: none;
+  }
+  input[type=text]:focus,
+  input[type=text]:active,
+  input[type=email]:focus,
+  input[type=email]:active,
+  input[type=password]:focus,
+  input[type=password]:active,
+  input[type=search]:focus,
+  input[type=search]:active {
+    background:#fff;
+  }
+}
+
+/* Footer bottom - copyright area */
+.mh-footer-bottom {
+  padding-bottom: 24px;
+  font-size: $font-size-xs;
+  padding-top: 24px;
+  background: #222;
+  color: #fff;
+  @include breakpoint(sm) {
+    text-align: right;
+  }
+}
+
+.mh-footer-bottom--transparent {
+  background: transparent;
+}

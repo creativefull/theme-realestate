@@ -1,0 +1,34 @@
+.mh-arrow-up {
+  background: $mh-color-primary;
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000000000000;
+  cursor:pointer;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.mh-arrow-up:hover {
+  background: #f4f4f4;
+  color:#000;
+}
+
+.mh-arrow-up__inner {
+  position: relative;
+}
+
+.mh-arrow-up i {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  color:#222;
+  text-align:center;
+}

@@ -1,0 +1,243 @@
+/* Comments */
+.mh-comments {
+  margin-bottom: 24px;
+  @include clearfix();
+  textarea {
+    height: 140px;
+    margin-bottom: 0;
+  }
+  .mh-post-single__section__heading {
+    margin-bottom: 0;
+  }
+}
+
+.mh-comment {
+  padding-top: 24px;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+  float: left;
+  width: 100%;
+  @include clearfix;
+  .mh-comment {
+    padding-left: 24px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 36px;
+    .mh-comment__avatar > img {
+      margin-left: 24px;
+    }
+    @include breakpoint(sm) {
+      padding-left: 48px;
+      .mh-comment__avatar > img {
+        margin-left: 48px;
+      }
+      .mh-comment__avatar {
+        top: 36px;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+      .mh-comment__content {
+        padding-bottom: 0;
+      }
+    }
+  }
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.mh-comment__avatar {
+  margin-bottom: 12px;
+  & > img {
+    border-radius: 50%;
+  }
+  @include breakpoint(sm) {
+    margin-bottom: 24px;
+    position: absolute;
+    top: 24px;
+    left: 0;
+  }
+}
+
+.mh-comment__content {
+  padding-bottom: 12px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 12px;
+  @include clearfix;
+  @include breakpoint(sm) {
+    padding-bottom: 24px;
+    padding-left: 90px;
+  }
+}
+
+.mh-comment__author {
+  margin-bottom: 0px;
+  font-size: $font-size-l;
+  font-weight: 400;
+}
+
+.mh-comment__date {
+  font-size: $font-size-xs;
+  padding: 6px 0;
+  font-style: italic;
+  color: #666666;
+}
+
+.mh-comment__text {
+  @include clearfix;
+}
+
+.mh-comment-awaiting-moderation {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 24px;
+  font-size: 24px;
+  display: block;
+  float: left;
+  width: 100%;
+  font-weight: 400;
+  border-left: 7px solid #4d4d4d;
+  color: #333;
+  background: rgba(34, 34, 34, 0.05);
+}
+
+.comment-edit-link {
+  margin-left: 12px;
+  font-size: $font-size-xs;
+  color: #666666;
+  font-style: normal;
+  &:hover {
+    color: $mh-color-primary;
+  }
+  i {
+    margin-right: 3px;
+  }
+}
+
+.comment-reply-link {
+  font-size: $font-size-xs;
+  line-height: $font-size-xs;
+  float: left;
+  color: #666666;
+  text-transform: uppercase;
+  @include clearfix;
+  i {
+    margin-left: 6px;
+  }
+  &:hover {
+    color: $mh-color-primary;
+  }
+}
+
+.form-submit {
+  text-align: right;
+  margin-bottom: 0;
+  input[type="submit"] {
+    width: auto;
+  }
+}
+
+.comments-logged {
+  font-size: $font-size-xs;
+  a {
+    color: #222;
+    font-weight: 400;
+  }
+}
+
+.comments-fields-wrapper {
+  margin-bottom: 15px;
+  overflow: hidden;
+  input {
+    text-align: left;
+    font-style: normal;
+    @include breakpoint(md) {
+      margin-bottom: 0
+    }
+  }
+}
+
+.comments-textarea-wrapper {
+  margin-bottom: 12px;
+  overflow: hidden;
+  @include clearfix;
+  textarea {
+    float: left;
+  }
+}
+
+.comment-respond {
+  float: left;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.comment-edit-link {
+  margin-right: 24px;
+}
+
+.comments-textarea-wrapper textarea {
+  text-align: left !important;
+  font-style: normal;
+}
+
+.single-estate {
+  .comments-textarea-wrapper textarea {
+    padding: 12px;
+    &:active,
+    &:focus {
+      padding: 11px;
+    }
+  }
+  .comment-respond {
+    margin-top: 0;
+  }
+  .comments-logged {
+    margin-top: 24px;
+  }
+  .form-submit {
+    display: block;
+    float: right;
+    margin-bottom: 24px;
+  }
+  .comments-fields-wrapper .mh-grid__1of3 {
+    @include breakpoint(sm) {
+      width: 50%;
+    }
+  }
+  .comments-fields-wrapper .mh-grid__1of3:last-child {
+    display: none;
+  }
+  .mh-comment .mh-comment {
+    border-color: #fff;
+  }
+  .mh-comment {
+    border-bottom: 0;
+  }
+}
+
+.comment-reply-title {
+  font-size: $font-size-m;
+  font-weight: 700;
+  text-align: left;
+  line-height: 30px; // 30px - height of close button
+  text-transform: uppercase;
+  position: relative;
+  @include clearfix();
+  margin-bottom: 12px;
+}
+
+#cancel-comment-reply-link {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  background: transparent;
+  border: 0;
+  background-image: url("assets/images/close.png");
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  color: transparent;
+}

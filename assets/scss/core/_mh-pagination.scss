@@ -1,0 +1,59 @@
+/* Pagination */
+.mh-pagination {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+  margin-bottom: 36px;
+  @include clearfix();
+  .page-numbers {
+    padding: 7px;
+    margin: 0 3px;
+    color: #222;
+  }
+  a:hover {
+    color: $mh-color-primary;
+  }
+}
+
+.mh-pagination--properties {
+  padding-left: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  .mh-pagination__item {
+    @include breakpoint(480px) {
+      padding: 0 6px;
+    }
+  }
+  li {
+    display: inline;
+    @include breakpoint(480px) {
+      padding: 0 12px;
+    }
+    a {
+      display: inline-block;
+      padding: 6px;
+      color: #444;
+    }
+    &.active a {
+      color: $mh-color-primary;
+    }
+  }
+}
+
+.mh-pagination--properties__inner {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.mh-pagination--single-post {
+  color: $mh-color-primary;
+  span {
+    margin: 10px;
+  }
+}
+
+.page-numbers.current {
+  color: $mh-color-primary;
+}

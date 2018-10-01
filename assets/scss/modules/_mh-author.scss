@@ -1,0 +1,56 @@
+/* Author */
+.mh-author {
+  background-color: #f2f2f2;
+  margin-bottom: 24px;
+  padding: 24px 18px;
+  @include clearfix;
+  text-align: center;
+  @include breakpoint(sm) {
+    padding: 36px 18px;
+    position: relative;
+    text-align: left;
+  }
+}
+
+.mh-author__avatar {
+  margin-bottom: 12px;
+  @include breakpoint(sm) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 24px;
+  }
+  & > img {
+    border-radius: 50%;
+  }
+}
+
+.mh-author__content {
+  @include breakpoint(sm) {
+    padding-left: 150px;
+    min-height: 125px;
+    display: table;
+    width: 100%;
+    @include clearfix;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mh-author__content__inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mh-author__label {
+  font-style: italic;
+  color: #4d4d4d;
+}
+
+.mh-author__name {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-size: $font-size-l;
+  font-weight: 700;
+}
